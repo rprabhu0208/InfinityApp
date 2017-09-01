@@ -1,0 +1,71 @@
+ 
+<p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)"> 
+    <p-accordionTab header="Search Criteria">
+        <form >
+        <fieldset>
+            <legend> Common Search Criteria:</legend>
+            <table border="0" width="70">
+                <tr>
+                    <td colspan="2">Policy #:</td>
+                    <!--<td></td>-->
+                    <td><input type="text"></td>
+                    <td><input type="button" id="btnSearchFromImage" value="Search from Image" /></td> 
+                </tr>
+                <tr>
+                    <td width="50" colspan="2">Insured File As Name :</td>
+                    <td colspan="2"><input type="text" [(ngModel)]="PolicySearch.InsuredName" name="InsuredName" (keyup)="onKey($event)" ></td> 
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <input type="checkbox"  [(ngModel)]="PolicySearch.InsuredNameOption.Override" name="Override" value="Override Sequencing"  > Override Sequencing
+                        <input type="checkbox"  [(ngModel)]="PolicySearch.InsuredNameOption.SoundsLike" name="SoundsLike" value="Sounds like" (change)="Search(PolicySearch)"> Sounds like
+                        <input type="checkbox"  [(ngModel)]="PolicySearch.InsuredNameOption.AllRelationships" name="AllRelationships" value="All Relationships"> All Relationships
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span>DBA Name:</span>
+                    </td><td colspan="2"><input type="text"></td> 
+                </tr>
+                <tr>
+                    <td> 
+                        PolicyID : 
+                    </td> 
+                    <td><input type="text"></td>
+                    <td><span>Version#:</span> </td>
+                    <td><input type="text"></td> 
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span>  PolicyYear: </span>
+                    </td>
+                    <td colspan="2"><input type="text"></td> 
+                </tr> 
+            </table>
+        </fieldset>   
+        <button (click)="Search(PolicySearch)" type="button">Search</button>
+        </form> 
+    </p-accordionTab>
+    <p-accordionTab header="Search Results">
+
+        <div class="content-section implementation">
+            <p-dataTable [value]="filteredPolicies" [rows]="10" [paginator]="true">
+                <p-column field="id" header="id" sortable="true"></p-column>
+                <p-column field="PolicyNum" header="Policy #" sortable="true"></p-column>
+                <p-column field="SubCompany" header="Sub Company" sortable="true"></p-column>
+                <p-column field="InsuredName" header="Insured Name" [filter]="true" filterMatchMode="equals">
+                    <ng-template pTemplate="filter" let-col>
+                        <p-dropdown [options]="InsuredNames" [style]="{'width':'100%'}" 
+                        (onChange)="filter($event.value,col.field,col.filterMatchMode)"
+                            styleClass="ui-column-filter" id="InsuredNameFilter">
+                            </p-dropdown>
+                            
+                        <i class="fa fa-filter" aria-hidden="true"  styleClass="ui-column-filter" (click)="openFilter()"  ></i>
+                    </ng-template>
+                </p-column>
+            </p-dataTable>
+        </div>
+    </p-accordionTab>
+
+</p-accordion>
