@@ -12,9 +12,7 @@ import { Utilities  } from '../../common/Utilities';
 
 export class PolicySearchComponent implements OnInit {
      PolicySearch : PolicySearch;
-     Policies : Policy[];
-     filteredPolicies : Policy[];
-     InsuredNames : any;
+     Policies : Policy[];  
      DB : DataService;
      AccordionIndex : number = 0; 
      constructor( dataservice:DataService) { 
@@ -35,8 +33,7 @@ export class PolicySearchComponent implements OnInit {
             this.Search(this.PolicySearch); 
         return
     }
-    Search(policysearch:any){   
-        console.dir(policysearch);
+    Search(policysearch:any){    
         
         let params: URLSearchParams = new URLSearchParams(); 
         if(policysearch.InsuredName != null &&  policysearch.InsuredNameOption != null ){
@@ -49,25 +46,12 @@ export class PolicySearchComponent implements OnInit {
         }
         if(!Utilities.isNullOrEmpty(policysearch.InsuredName) && !params.has("InsuredName_like")) { 
                 params.set('InsuredName', policysearch.InsuredName);  
-        } 
-        console.log(params)
+        }  
         this.DB.GetPolicies(params)
         .then(
         (
             policiesData: Policy[]) => { 
-            this.Policies = policiesData; 
-            this.filteredPolicies = policiesData;
-            //this.InsuredNames.push(); 
-            this.InsuredNames = policiesData.map((x)=>({label : x.InsuredName, value : x.InsuredName})).filter(function(el)
-                        {return (el.value != '')})
-                        
-            if(this.InsuredNames.length > 0){
-                this.InsuredNames.unshift({ label: '(NonBlanks)', value: 'NonBlanks' })
-                this.InsuredNames.unshift({ label: '(Blanks)', value: '' })
-                this.InsuredNames.unshift({ label: '(Custom)', value: 'Custom' })
-                this.InsuredNames.unshift({ label: '(All)', value: 'All' })
-            }
-            
+            this.Policies = policiesData;   
         },
         (errorMessage: string) => {
             console.log(errorMessage);
@@ -75,26 +59,7 @@ export class PolicySearchComponent implements OnInit {
         this.AccordionIndex = 1;
     }
     
-    filter(value,field,filtermatchMode){ 
-        this.filteredPolicies = this.Policies.filter(function(el){
-            switch(field){
-                case 'InsuredName':
-                    switch(value){
-                        case 'All' :
-                            return el; 
-                        case 'NonBlanks':
-                            return (el.InsuredName != '')
-                        default :
-                            return (el.InsuredName == value);
-                    } 
-                default :
-                    break;
-
-            }
-            console.log(el) 
-        }); 
-    }
-
+  
     openFilter(){
      //   debugger;
         var insuredNameFilter = document.getElementById('InsuredNameFilter');  

@@ -48,25 +48,8 @@
         </form> 
     </p-accordionTab>
     <p-accordionTab header="Search Results">
-
-        <div class="content-section implementation">
-            <p-dataTable [value]="filteredPolicies" [rows]="10" [paginator]="true">
-                <p-column field="id" header="id" sortable="true"></p-column>
-                <p-column field="PolicyNum" header="Policy #" sortable="true"></p-column>
-                <p-column field="SubCompany" header="Sub Company" sortable="true"></p-column>
-                <p-column field="InsuredName" header="Insured Name" [filter]="true" filterMatchMode="equals">
-                    <ng-template pTemplate="filter" let-col>
-                        <p-dropdown [options]="InsuredNames" [style]="{'width':'100%'}" 
-                        (onChange)="filter($event.value,col.field,col.filterMatchMode)"
-                            styleClass="ui-column-filter" id="InsuredNameFilter">
-                            </p-dropdown>
-                            
-                        <i class="fa fa-filter" aria-hidden="true"  styleClass="ui-column-filter" (click)="openFilter()"  ></i>
-                    </ng-template>
-                </p-column>
-                  <p-column field="state" header="State" sortable="true"></p-column> 
-            </p-dataTable>
-        </div>
+        <policy-list [Policies]="Policies" ></policy-list>
+       
     </p-accordionTab>
 
 </p-accordion>

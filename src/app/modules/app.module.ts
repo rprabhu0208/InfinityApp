@@ -6,6 +6,7 @@ import { AppComponent } from '../components/AppComponent/app.component';
 import { DataService } from '../services/data.service';
 import { Routes } from '../configurations/app.config';
 import { PolicySearchComponent  } from '../components/PolicySearchComponent/policysearch.component';
+import { PolicyListComponent  } from '../components/PolicyListComponent/policylist.component';
 import {DataTableModule,SharedModule,DropdownModule,AccordionModule} from 'primeng/primeng';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
@@ -15,7 +16,7 @@ import { Utilities  } from '../common/Utilities';
   declarations: [
     AppComponent
     ,PolicySearchComponent
-
+    ,PolicyListComponent
   ],
   imports: [
     BrowserModule
