@@ -13,9 +13,11 @@ export const Routes = [
         component:PolicySearchComponent
     },
     {
+        path:'policy', 
+        component:PolicyDetailComponent 
+    },
+     {
         path:'policy/:policynum', 
-        component:PolicyDetailComponent
-        
-
+        component:PolicyDetailComponent 
     }
 ]

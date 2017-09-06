@@ -13,7 +13,7 @@ export class DataService
         this.HTTPService = httpService;
         this.Policies = []; 
     } 
-      GetPolicies(params){
+     GetPolicies(params){
         return new Promise(
             (resolve,reject) =>
         {  
