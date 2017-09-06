@@ -1,6 +1,6 @@
  
-<p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)"> 
-    <p-accordionTab header="Search Criteria">
+<!--<p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)"> 
+    <p-accordionTab header="Search Criteria">-->
         <form >
         <fieldset>
             <legend> Common Search Criteria:</legend>
@@ -46,10 +46,9 @@
         </fieldset>   
         <button (click)="Search(PolicySearch)" type="button">Search</button>
         </form> 
-    </p-accordionTab>
-    <p-accordionTab header="Search Results">
-        <policy-list [Policies]="Policies" ></policy-list>
-       
-    </p-accordionTab>
-
-</p-accordion>
+    <!--</p-accordionTab>
+    <p-accordionTab header="Search Results">-->
+        <policy-list [Policies]="Policies" ></policy-list> 
+    <!--</p-accordionTab>-->
+<!--
+</p-accordion>-->
