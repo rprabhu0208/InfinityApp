@@ -7,7 +7,7 @@ import { DataService } from '../services/data.service';
 import { Routes } from '../configurations/routes.config';
 import { PolicySearchComponent  } from '../components/PolicySearchComponent/policysearch.component';
 import { PolicyListComponent  } from '../components/PolicyListComponent/policylist.component';
-// import {SharedModule,DropdownModule,AccordionModule} from 'primeng/primeng';
+ import {SharedModule,DropdownModule,AccordionModule} from 'primeng/primeng';
 import {DataTableModule} from 'angular2-datatable'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
@@ -25,14 +25,14 @@ import { PolicyDetailComponent  } from '../components/PolicyDetailComponent/poli
   imports: [
     BrowserModule
     ,BrowserAnimationsModule
-   // ,DataTableModule
    ,DataTableModule
-  //  ,SharedModule
-  //  ,DropdownModule
+   ,DataTableModule
+    ,SharedModule
+    ,DropdownModule
     ,HttpModule
     ,FormsModule
     ,RouterModule.forRoot(Routes)
-  //  ,AccordionModule
+   ,AccordionModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

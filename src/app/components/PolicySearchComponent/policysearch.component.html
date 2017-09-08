@@ -1,55 +1,142 @@
- 
-<!--<p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)"> 
-    <p-accordionTab header="Search Criteria">-->
-        <form >
-        <fieldset>
-            <legend> Common Search Criteria:</legend>
-            <table border="0" width="70">
-                <tr>
-                    <td colspan="2">Policy #:</td>
-                    <!--<td></td>-->
-                    <td><input type="text"></td>
-                    <td><input type="button" id="btnSearchFromImage" value="Search from Image" /></td> 
-                </tr>
-                <tr>
-                    <td width="50" colspan="2">Insured File As Name :</td>
-                    <td colspan="2"><input type="text" [(ngModel)]="PolicySearch.InsuredName" name="InsuredName" (keyup)="onKey($event)" ></td> 
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="3">
-                        <input type="checkbox"  [(ngModel)]="PolicySearch.InsuredNameOption.Override" name="Override" value="Override Sequencing"  > Override Sequencing
-                        <input type="checkbox"  [(ngModel)]="PolicySearch.InsuredNameOption.SoundsLike" name="SoundsLike" value="Sounds like" (change)="Search(PolicySearch)"> Sounds like
-                        <input type="checkbox"  [(ngModel)]="PolicySearch.InsuredNameOption.AllRelationships" name="AllRelationships" value="All Relationships"> All Relationships
-                    </td> 
-                </tr>
-                <tr>
-                    <td colspan="2">
+<p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)">
+<p-accordionTab header="Search Criteria">
+   <div class="container">
+      <div class="panel panel-default">
+         <div class="panel-body">
+            <fieldset class="col-md-6">
+               <legend> Common Search Criteria:</legend>
+               <table border="0" width="100%" class="table">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Policy #:</td>
+                     <td colspan="3"><input type="text">
+                     <input type="button" id="btnSearchFromImage" value="Search from Image" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Insured File As Name :</td>
+                     <td colspan="3">
+                        <input type="text" [(ngModel)]="PolicySearch.InsuredName" name="InsuredName" (keyup)="onKey($event)" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <input type="checkbox" [(ngModel)]="PolicySearch.InsuredNameOption.Override" name="Override" value="Override Sequencing">        Override Sequencing
+                        <input type="checkbox" [(ngModel)]="PolicySearch.InsuredNameOption.SoundsLike" name="SoundsLike" value="Sounds like">Sounds
+                        like
+                        <input type="checkbox" [(ngModel)]="PolicySearch.InsuredNameOption.AllRelationships" name="AllRelationships" value="All Relationships">All
+                        Relationships
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <span>DBA Name:</span>
-                    </td><td colspan="2"><input type="text"></td> 
-                </tr>
-                <tr>
-                    <td> 
-                        PolicyID : 
-                    </td> 
-                    <td><input type="text"></td>
-                    <td><span>Version#:</span> </td>
-                    <td><input type="text"></td> 
-                </tr>
-                <tr>
-                    <td colspan="2">
+                     </td>
+                     <td colspan="3">
+                        <input type="text" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        PolicyID :
+                     </td>
+                     <td>
+                        <input type="text" style="width:90%">
+                     </td>
+                     <td><span>Version#:</span> </td>
+                     <td>
+                        <input type="text" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <span>  PolicyYear: </span>
-                    </td>
-                    <td colspan="2"><input type="text"></td> 
-                </tr> 
-            </table>
-        </fieldset>   
-        <button (click)="Search(PolicySearch)" type="button">Search</button>
-        </form> 
-    <!--</p-accordionTab>
-    <p-accordionTab header="Search Results">-->
-        <policy-list [type]="'RecentlyViewed'" ></policy-list>  
-        <policy-list [Policies]="Policies"  ></policy-list>  
-    <!--</p-accordionTab>-->
-<!--
-</p-accordion>-->
+                     </td>
+                     <td>
+                        <input type="text" style="width:90%">
+                     </td>
+                     <td colspan="3"> </td>
+                  </tr>
+               </table>
+            </fieldset>
+            <div class="clear"></div>
+            <fieldset class="col-md-6">
+               <legend> Address Search Criteria</legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Address Type:</td>
+                     <td colspan="3">
+                        <input type="radio" name="gender" value="male"> Insured, Policy or Underwriting Name Address<br>
+                        <input type="radio" name="gender" value="female"> Risk Allocation Address<br>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Address :</td>
+                     <td colspan="3">
+                        <input type="text" style="width:100%"> <input type="checkbox" name=" Soundslike" value="Sounds like"> Sounds like<br />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td> City:</td>
+                     <td colspan="3">
+                        <input type="text" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>State/Province :</td>
+                     <td colspan="3">
+                        <select style="width: 100%">
+                           <option value="(All)">(All)</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="saab">Saab</option>
+                           <option value="mercedes">Mercedes</option>
+                           <option value="audi">Audi</option>
+                        </select>
+                        <br>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Zip/Postal Code:</td>
+                     <td>
+                        <input type="text" style="width:90%" >
+                     </td>
+                     <td class="right">Country/Region:</td>
+                     <td>
+                        <input type="text" class="right" style="width:100%" > 
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Country:</td>
+                     <td colspan="3">
+                         <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td> 
+                     </tr> 
+               </table>
+            </fieldset>
+         </div>
+         <!--<button (click)="Search(PolicySearch)" type="button">Search</button>-->
+      </div>
+   </div>
+</p-accordionTab>
+<p-accordionTab header="Search Results">
+   <!--<policy-list [type]="'RecentlyViewed'" ></policy-list>  -->
+   <policy-list [Policies]="Policies"></policy-list>
+</p-accordionTab>
+</p-accordion>

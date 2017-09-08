@@ -7,7 +7,8 @@ import { Utilities  } from '../../common/Utilities';
 @Component({
     moduleId: module.id,
     selector: 'policy-search',
-    templateUrl: 'policysearch.component.html' 
+    templateUrl: 'policysearch.component.html' ,
+     styleUrls: ['policysearch.component.css']
 })
 
 export class PolicySearchComponent implements OnInit {

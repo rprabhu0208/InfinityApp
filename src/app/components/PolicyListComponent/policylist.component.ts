@@ -10,7 +10,9 @@ import { DataService } from '../../services/data.service'
     moduleId: module.id,
     selector: 'policy-list',
     templateUrl: 'policylist.component.html' ,
-    styleUrls: ['policylist.css']
+    styleUrls: ['policylist.css'
+              
+    ]
 }) 
 export class PolicyListComponent implements OnInit { 
     _Policies : Policy[]; 
