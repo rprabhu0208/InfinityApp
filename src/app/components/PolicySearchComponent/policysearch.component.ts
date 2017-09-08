@@ -13,9 +13,10 @@ import { Utilities  } from '../../common/Utilities';
 export class PolicySearchComponent implements OnInit {
      PolicySearch : PolicySearch;
      Policies : Policy[];  
+     recentlyViewedPolicies : Policy[];
      DB : DataService;
      AccordionIndex : number = 0; 
-     constructor( dataservice:DataService) { 
+     constructor(public dataservice:DataService) { 
          this.Policies = []; 
          this.DB = dataservice;
      }
@@ -23,7 +24,7 @@ export class PolicySearchComponent implements OnInit {
     ngOnInit() { 
         this.AccordionIndex = 0; 
         this.PolicySearch = new PolicySearch()
-         this.PolicySearch.InsuredNameOption = new Options(); 
+        this.PolicySearch.InsuredNameOption = new Options();  
     }
     onTabOpen(event:any){ 
         this.AccordionIndex = event.index; 

@@ -6,12 +6,13 @@ import { Policy,PolicySearch } from '../models/policy'
 export class DataService
 {
     HTTPService : Http;
-    Policies : Policy[];  
+    Policies : Policy[];
+    recentlyViewedPolicies: Policy[];  
     policysearch : PolicySearch;
     constructor(httpService:Http)
     {
         this.HTTPService = httpService;
-        this.Policies = []; 
+        //this.Policies = []; 
     } 
      GetPolicies(params){
         return new Promise(

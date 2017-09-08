@@ -1,0 +1,25 @@
+{
+    "Policies": [
+    {
+      "id": 1,
+      "PolicyNum" :"833437-1",
+      "SubCompany": "Artisan Contractors",
+      "InsuredName" :"CARLOS HERNANDEZ",
+      "version" : "1"
+    },
+     {
+      "id": 2,
+      "PolicyNum" :"833438-1",
+      "SubCompany": "Contractors",
+      "InsuredName" :"Test",
+      "version" : "1"
+    },
+    {
+      "id": 3,
+      "PolicyNum" :"833439-1",
+      "SubCompany": "Artisan Contractors",
+      "InsuredName" :"",
+      "version" : "1"
+    } 
+  ]
+}
