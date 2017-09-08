@@ -3,7 +3,8 @@
    <div class="container">
       <div class="panel panel-default">
          <div class="panel-body">
-            <fieldset class="col-md-6">
+             <div class="col-1">
+                <fieldset  >
                <legend> Common Search Criteria:</legend>
                <table border="0" width="100%" class="table">
                   <colgroup>
@@ -65,7 +66,7 @@
                </table>
             </fieldset>
             <div class="clear"></div>
-            <fieldset class="col-md-6">
+            <fieldset >
                <legend> Address Search Criteria</legend>
                <table class="table" style="width:100%">
                   <colgroup>
@@ -130,6 +131,162 @@
                      </tr> 
                </table>
             </fieldset>
+            </div>
+            <!-- Right Panel -->
+            <div class="col-1">
+                <fieldset  >
+               <legend> Other Name Search Criteria:</legend>
+               <table border="0" width="100%" class="table">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Other Name Type:</td>
+                     <td colspan="3"> 
+                         <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Other File As Name :</td>
+                     <td colspan="3">
+                        <input type="text" [(ngModel)]="PolicySearch.InsuredName" name="InsuredName" (keyup)="onKey($event)" style="width:100%">
+                        <input type="checkbox" name=" Soundslike" value="Sounds like"> Sounds like<br />
+                     </td>
+                  </tr> 
+               </table>
+            </fieldset>
+            <div class="clear"></div>
+            <fieldset >
+               <legend>Sub Company Level Search Criteria</legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Sub-Company:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                    <tr>
+                     <td>Line of Business:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Policy Type:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Underwriting Asst:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Underwriter:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+            <div class="clear"></div>
+            <fieldset >
+               <legend>Policy Transaction Status Search Criteria </legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Transaction Type:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                    <tr>
+                     <td>Transaction Status:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Processing Status:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="USA">USA</option>
+                             <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                             <option value="mercedes">Mercedes</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                     </td>
+                  </tr>
+                  
+               </table>
+            </fieldset>
+            </div>
+
          </div>
          <!--<button (click)="Search(PolicySearch)" type="button">Search</button>-->
       </div>
