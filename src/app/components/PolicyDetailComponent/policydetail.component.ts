@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Policy } from '../../models/policy'
+import { PolicySearchResult } from '../../models/policy'
 import { Utilities } from '../../common/Utilities';
 import { ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
@@ -17,10 +17,10 @@ export class PolicyDetailComponent implements OnInit {
     policynum: string;
     private sub: any;
     DB: DataService;
-    policy: Policy;
+    policy: PolicySearchResult;
     constructor(private route: ActivatedRoute, public dataservice: DataService) { 
      //   this.DB = dataservice;
-        this.policy = new Policy();
+        this.policy = new PolicySearchResult();
     }
     ngOnInit() {
         this.sub = this.route.params.subscribe(params => {

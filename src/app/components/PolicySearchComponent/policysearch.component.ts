@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AccordionModule} from 'primeng/primeng';
-import { Policy,PolicySearch,Options } from '../../models/policy'
+import { PolicySearchResult,PolicySearch,Options } from '../../models/policy'
 import {DataService} from '../../services/data.service'
 import {URLSearchParams  } from '@angular/http';
 import { Utilities  } from '../../common/Utilities';
@@ -13,12 +13,12 @@ import { Utilities  } from '../../common/Utilities';
 
 export class PolicySearchComponent implements OnInit {
      PolicySearch : PolicySearch;
-     Policies : Policy[];  
-     recentlyViewedPolicies : Policy[];
+     PolicySearchResults : PolicySearchResult[];  
+     recentlyViewedPolicies : PolicySearchResult[];
      DB : DataService;
      AccordionIndex : number = 0; 
      constructor(public dataservice:DataService) { 
-         this.Policies = []; 
+         this.PolicySearchResults = []; 
          this.DB = dataservice;
      }
 
@@ -52,8 +52,9 @@ export class PolicySearchComponent implements OnInit {
         this.DB.GetPolicies(params)
         .then(
         (
-            policiesData: Policy[]) => { 
-            this.Policies = policiesData;   
+            policiesData: PolicySearchResult[]) => { 
+            this.PolicySearchResults = policiesData;   
+console.log(policiesData)
         },
         (errorMessage: string) => {
             console.log(errorMessage);

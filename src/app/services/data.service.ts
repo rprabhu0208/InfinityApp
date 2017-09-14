@@ -1,13 +1,13 @@
 import {Injectable} from '@angular/core'
 import {Http,RequestOptions,Headers} from '@angular/http'
-import { Policy,PolicySearch } from '../models/policy'
+import { PolicySearchResult,PolicySearch } from '../models/policy'
 
 @Injectable()
 export class DataService
 {
     HTTPService : Http;
-    Policies : Policy[];
-    recentlyViewedPolicies: Policy[];  
+    PolicySearchResults : PolicySearchResult[];
+    recentlyViewedPolicies: PolicySearchResult[];  
     policysearch : PolicySearch;
     constructor(httpService:Http)
     {
@@ -18,11 +18,11 @@ export class DataService
         return new Promise(
             (resolve,reject) =>
         {  
-            this.HTTPService.get('http://localhost:5000/Policies', { search:params })
+            this.HTTPService.get('http://localhost:5000/policySearchResults', { search:params })
             .subscribe(
                 (response) => { 
-                    this.Policies = response.json();
-                    return resolve(this.Policies); 
+                    this.PolicySearchResults = response.json();
+                    return resolve(this.PolicySearchResults); 
                 },
                 (error) => {
                     console.dir(error)

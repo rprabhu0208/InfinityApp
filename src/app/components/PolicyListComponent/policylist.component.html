@@ -1,5 +1,5 @@
 <div class="content-section implementation">
-    <table class="table table-hover" [mfData]="_Policies" #mf="mfDataTable" [mfRowsOnPage]="10">
+    <table class="table table-hover" [mfData]="_PolicySearchResults" #mf="mfDataTable" [mfRowsOnPage]="10">
         <thead class="thead-inverse">
             <tr>
                 <th style="width: 20%">
@@ -19,9 +19,9 @@
 </thead>
 <tbody>
     <tr *ngFor="let item of mf.data">
-        <td>{{item.PolicyNum}}</td>
-        <td>{{item.InsuredName}}</td>
-        <td>{{item.SubCompany}}</td>
+        <td>{{item.policyNum}}</td>
+        <td>{{item.insuredFileAsName}}</td>
+        <td>{{item.subCompanyName}}</td>
         <td>{{item.version}}</td>
     </tr>
 </tbody>
