@@ -36,6 +36,7 @@ export class PolicyListComponent implements OnInit {
     @Input()
     set Policies(PolicySearchResults : PolicySearchResult[]){   
         this._PolicySearchResults = PolicySearchResults; 
+     
         if(!Utilities.isNullOrEmpty(PolicySearchResults))
         {
             // this._InsuredNames = PolicySearchResults.map((x)=>({label : x.InsuredName, value : x.InsuredName})).filter(function(el)
