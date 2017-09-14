@@ -14,13 +14,14 @@ import { HttpModule } from '@angular/http';
 import { Utilities } from '../common/Utilities';
 import { FilterComponent } from '../common/components/filtercomponent/filter.component'
 import { PolicyDetailComponent  } from '../components/PolicyDetailComponent/policydetail.component';
+
 @NgModule({
   declarations: [
     AppComponent
     ,PolicySearchComponent
     ,PolicyListComponent
     ,FilterComponent
-    ,PolicyDetailComponent
+    ,PolicyDetailComponent 
   ],
   imports: [
     BrowserModule
@@ -31,7 +32,7 @@ import { PolicyDetailComponent  } from '../components/PolicyDetailComponent/poli
     ,DropdownModule
     ,HttpModule
     ,FormsModule
-    ,RouterModule.forRoot(Routes)
+    ,RouterModule.forRoot(Routes, { useHash: true }) 
    ,AccordionModule
   ],
   providers: [DataService],
