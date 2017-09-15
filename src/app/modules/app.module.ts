@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from '../components/AppComponent/app.component';
-import { DataService } from '../services/data.service';
+ import { DataService } from '../services/data.service';
+// import { PolicyService } from '../services/policy.service';
+// import { HttpClient} from '../services/http.client'
 import { Routes } from '../configurations/routes.config';
 import { PolicySearchComponent  } from '../components/PolicySearchComponent/policysearch.component';
 import { PolicyListComponent  } from '../components/PolicyListComponent/policylist.component';
@@ -22,6 +24,7 @@ import { PolicyDetailComponent  } from '../components/PolicyDetailComponent/poli
     ,PolicyListComponent
     ,FilterComponent
     ,PolicyDetailComponent 
+   
   ],
   imports: [
     BrowserModule
@@ -34,6 +37,7 @@ import { PolicyDetailComponent  } from '../components/PolicyDetailComponent/poli
     ,FormsModule
     ,RouterModule.forRoot(Routes, { useHash: true }) 
    ,AccordionModule
+    
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

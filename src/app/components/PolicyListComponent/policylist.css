@@ -1,1 +1,12 @@
- 
+ .table tbody tr{
+     font-size: 11px
+ }
+ .table thead tr{
+     font-size: 12px;
+ }
+  .table thead tr th, .table tbody tr td{
+      padding:3px
+  }
+ .page-item a.page-link{
+     padding:3px 12px;
+ } 

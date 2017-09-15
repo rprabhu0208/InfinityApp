@@ -1,9 +1,9 @@
 <div class="content-section implementation" style="overflow-x:auto">
-    <table class="table table-hover" [mfData]="_PolicySearchResults" #mf="mfDataTable" [mfRowsOnPage]="5">
+    <table class="table table-hover table-bordered" [mfData]="_PolicySearchResults" #mf="mfDataTable" [mfRowsOnPage]="10">
         <thead class="thead-inverse">
             <tr>
-                    <th><mfDefaultSorter by="subCompanyName">Sub-Company</mfDefaultSorter></th>
-                    <th> <mfDefaultSorter by="insuredFileAsName">Insured File As Name </mfDefaultSorter>
+                    <th ><mfDefaultSorter by="subCompanyName">Sub-Company</mfDefaultSorter></th>
+                    <th style="width:30%"> <mfDefaultSorter by="insuredFileAsName">Insured File As Name </mfDefaultSorter>
                         <!--<filter by="InsuredName" filterMode="equals" options="InsuredNames" ></filter>-->
                     </th>
                     <th><mfDefaultSorter by="policyNum">Policy #</mfDefaultSorter></th>
@@ -37,7 +37,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of mf.data">
+            <tr style="white-space: nowrap" *ngFor="let item of mf.data">
                 <td>{{item.subCompanyName}}</td>
                 <td>{{item.insuredFileAsName}}</td>
                 <td>{{item.policyNum}}</td> 

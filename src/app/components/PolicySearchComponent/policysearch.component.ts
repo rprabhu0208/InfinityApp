@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AccordionModule} from 'primeng/primeng';
 import { PolicySearchResult,PolicySearch,Options } from '../../models/policy'
 import {DataService} from '../../services/data.service'
+// import {PolicyService} from '../../services/policy.service'
 import {URLSearchParams  } from '@angular/http';
 import { Utilities  } from '../../common/Utilities';
 @Component({
