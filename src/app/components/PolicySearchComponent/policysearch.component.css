@@ -46,3 +46,10 @@
     float: left;
     }
          
+
+    input, button, select, textarea{
+        line-height: normal;
+    }
+    .paddingTop0{
+        padding-top:0px
+    }

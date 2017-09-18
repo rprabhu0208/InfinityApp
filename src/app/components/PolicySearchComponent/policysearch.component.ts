@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {AccordionModule} from 'primeng/primeng';
-import { PolicySearchResult,PolicySearch,Options } from '../../models/policy'
+import { PolicySearchResult,PolicySearch,Options ,SubCompany,State, Country, TxnType,TxnStatus, NameType,ProcessStatus } from '../../models/policy'
 import {DataService} from '../../services/data.service'
 // import {PolicyService} from '../../services/policy.service'
-import {URLSearchParams  } from '@angular/http';
+import {URLSearchParams,RequestOptions  } from '@angular/http';
 import { Utilities  } from '../../common/Utilities';
 @Component({
     moduleId: module.id,
@@ -17,16 +17,41 @@ export class PolicySearchComponent implements OnInit {
      PolicySearchResults : PolicySearchResult[];  
      recentlyViewedPolicies : PolicySearchResult[];
      DB : DataService;
-     AccordionIndex : number = 0; 
+     AccordionIndex : number = 0;  
+     subCompanies : SubCompany[];
+     states : State[];
+     countries : Country[]
+     txnTypes : TxnType[]
+     txnstatus : TxnStatus[]
+     otherNames : NameType[]
+     processStatus : ProcessStatus[]
      constructor(public dataservice:DataService) { 
          this.PolicySearchResults = []; 
-         this.DB = dataservice;
+         this.DB = dataservice;   
+        //  this.PolicySearch = new PolicySearch()
+          this.subCompanies =  this.states = this.countries = this.txnTypes = this.txnstatus = this.otherNames= this.processStatus=  [];
      }
 
     ngOnInit() { 
         this.AccordionIndex = 0; 
         this.PolicySearch = new PolicySearch()
         this.PolicySearch.InsuredNameOption = new Options();  
+        console.log("subcompanycode")
+        console.log(this.PolicySearch.SubCompanyCode)
+        this.DB.GetMetaData().then(
+        (metadata: any) => {  
+            this.subCompanies = metadata.subCompanyResults;  
+            this.states = metadata.stateResults;
+            this.countries = metadata.countryResults;
+            this.otherNames = metadata.nameTypeResults;
+            this.txnTypes = metadata.txnTypeResults;
+            this.txnstatus = metadata.txnStatusResults; 
+            this.processStatus = metadata.processStatusResults;
+        },
+        (errorMessage: string) => {
+            console.log(errorMessage);
+        });
+      
     }
     onTabOpen(event:any){ 
         this.AccordionIndex = event.index; 
@@ -36,26 +61,28 @@ export class PolicySearchComponent implements OnInit {
             this.Search(this.PolicySearch); 
         return
     }
-    Search(policysearch:any){    
+    Search(policysearch:any){     
         
         let params: URLSearchParams = new URLSearchParams(); 
-        if(policysearch.InsuredName != null &&  policysearch.InsuredNameOption != null ){
-            if(policysearch.InsuredNameOption.SoundsLike != null && policysearch.InsuredNameOption.SoundsLike)
-                params.set('InsuredName_like', policysearch.InsuredName); 
-            if(policysearch.InsuredNameOption.AllRelationships != null && policysearch.InsuredNameOption.AllRelationships)
-                params.set('InsuredName_like', policysearch.InsuredName);  
-            if(policysearch.InsuredNameOption.AllRelationships != null && policysearch.InsuredNameOption.AllRelationships)
-                params.set('InsuredName_like', policysearch.InsuredName);   
-        }
-        if(!Utilities.isNullOrEmpty(policysearch.InsuredName) && !params.has("InsuredName_like")) { 
-                params.set('InsuredName', policysearch.InsuredName);  
-        }  
-        this.DB.GetPolicies(params)
+        // if(policysearch.InsuredName != null &&  policysearch.InsuredNameOption != null ){
+        //     if(policysearch.InsuredNameOption.SoundsLike != null && policysearch.InsuredNameOption.SoundsLike)
+        //         params.set('InsuredName_like', policysearch.InsuredName); 
+        //     if(policysearch.InsuredNameOption.AllRelationships != null && policysearch.InsuredNameOption.AllRelationships)
+        //         params.set('InsuredName_like', policysearch.InsuredName);  
+        //     if(policysearch.InsuredNameOption.AllRelationships != null && policysearch.InsuredNameOption.AllRelationships)
+        //         params.set('InsuredName_like', policysearch.InsuredName);   
+        // }
+        // if(!Utilities.isNullOrEmpty(policysearch.InsuredName) && !params.has("InsuredName_like")) { 
+        //         params.set('InsuredName', policysearch.InsuredName);  
+        // }   
+
+        let options = new RequestOptions({  params: policysearch });
+        this.DB.GetPolicies(options)
         .then(
         (
             policiesData: PolicySearchResult[]) => { 
             this.PolicySearchResults = policiesData;   
-console.log(policiesData)
+ 
         },
         (errorMessage: string) => {
             console.log(errorMessage);

@@ -3,8 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { PolicySearchResult,PolicySearch,Options } from '../../models/policy'  
 import { Utilities  } from '../../common/Utilities';
 import { FilterComponent } from '../../common/components/filtercomponent/filter.component' 
-import { Router, ActivatedRoute } from '@angular/router'
-
+import { Router, ActivatedRoute } from '@angular/router' 
 import { DataService } from '../../services/data.service'
 @Component({
     moduleId: module.id,

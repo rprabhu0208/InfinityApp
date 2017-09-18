@@ -1,5 +1,5 @@
 <div class="content-section implementation" style="overflow-x:auto">
-    <table class="table table-hover table-bordered" [mfData]="_PolicySearchResults" #mf="mfDataTable" [mfRowsOnPage]="10">
+    <table class="table table-hover table-bordered" [mfData]="_PolicySearchResults" #mf="mfDataTable" >
         <thead class="thead-inverse">
             <tr>
                     <th ><mfDefaultSorter by="subCompanyName">Sub-Company</mfDefaultSorter></th>
@@ -49,10 +49,10 @@
                 <td>{{item.txnTypeCode}}</td>
                 <td>{{item.enReason}}</td>
                 <td>{{item.txnStatusCode}}</td>
-                <td>{{item.writtenPrem}}</td>
-                <td>{{item.txnEff}}</td>
-                <td>{{item.policyExp}} </td>
-                <td>{{item.issued}}</td>
+                <td>{{item.writtenPrem | number:'1.2-2'}}</td>
+                <td>{{item.txnEff | date:'MM/dd/yyyy' }} </td>
+                <td>{{item.policyExp | date:'MM/dd/yyyy'}} </td>
+                <td>{{item.issued | date:'MM/dd/yyyy'}}</td>
                 <td>{{item.producer}}</td>
                 <td>{{item.policyYear}}</td> 
                 <td>{{item.policyTermNum}}</td>
@@ -62,18 +62,18 @@
                 <td>{{item.portalStatusDescription}} </td>
                 <td>{{item.altPolicyNum}}</td>
                 <td>{{item.busClass}}</td>
-                <td>{{item.creationDate}}</td> 
+                <td>{{item.creationDate | date:'MM/dd/yyyy'}}</td> 
                 <td>{{item.declinationTypeCode}}</td>
                 <td>{{item.isCancelled}}</td>
                 <td>{{item.isNonRenewable}}</td>
-                <td>{{item.policyEff}}</td>
+                <td>{{item.policyEff | date:'MM/dd/yyyy'}}</td>
                 <td>{{item.onWatchList}} </td> 
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="4">
-                    <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+                <td colspan="30">
+                    <mfBootstrapPaginator ></mfBootstrapPaginator>
                 </td>
             </tr>
         </tfoot>

@@ -2,7 +2,7 @@ export class PolicySearchResult{
     city: string;
     countryCode: string;
     enReason:string ;
-    insuredFileAsName: string;
+    InsuredFileAsName: string;
     lastTxnNum: Number;
     policyExp: Date;
     policyId: Number;
@@ -38,12 +38,30 @@ export class PolicySearchResult{
 
 export class PolicySearch {
     PolicyNum :string;
-    InsuredName : string;
+    InsuredFileAsName : string;
     InsuredNameOption : Options;
     DBAName : string;
     PolicyID: string;
     Version : number;
     Address : Address;
+    StateId : string;
+    CountryCode : string;
+    OtherNameTypeId : string;
+    TxnStatusCode : string;
+    TxnTypeCode : string;
+    SubCompanyCode:string;
+    ProcessStatusCode : string;
+    constructor(){
+        this.SubCompanyCode = "";
+        this.InsuredFileAsName = "";
+        this.TxnTypeCode = "";
+        this.TxnStatusCode = "";
+        this.OtherNameTypeId = "";
+        this.CountryCode ="";
+        this.StateId ="";
+        this.ProcessStatusCode = "";
+    }
+    
 }
 
  class Address {
@@ -56,4 +74,38 @@ export class Options{
     Override : boolean;
     SoundsLike: boolean;
     AllRelationships : boolean;
+}
+
+export class SubCompany{
+    subCompanyCode:string;
+    subCompanyName : string;
+
+}
+
+export class State{
+    stateId : number;
+    stateCode : string;
+    stateName : string;
+}
+
+export class Country{
+    countryName : string;
+    countryCode : string;
+}
+export class NameType{
+    nameTypeId : number
+    nameTypeCode : string 
+    nameType : string 
+}
+export class TxnType{
+    txnTypeCode : string 
+    txnType : string
+}
+export class TxnStatus{
+    txnStatusCode : string 
+    policyTxnStatus : string 
+}
+export class ProcessStatus{
+    processStatusCode: string;
+    processStatus : string;
 }
