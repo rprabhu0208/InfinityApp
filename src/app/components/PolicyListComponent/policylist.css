@@ -10,3 +10,6 @@
  .page-item a.page-link{
      padding:3px 12px;
  } 
+  .pointer{
+cursor: pointer;
+    }

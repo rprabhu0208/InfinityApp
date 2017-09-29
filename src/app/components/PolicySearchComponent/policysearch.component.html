@@ -1,5 +1,5 @@
 <div style="padding:2px 5px 2px 5px">
-    <button type="button"><span  class="fa fa-search" (click)="Search(PolicySearch)"></span></button>
+    <button type="button" id="btnSearch" (click)="Search(PolicySearch)" ><span  class="fa fa-search" ></span></button>
 </div>
 <p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)">
 <p-accordionTab header="Search Criteria" >
@@ -8,24 +8,24 @@
          <div class=""><!--panel-body-->
              <div class="col-1">
                 <fieldset  >
-               <legend> Common Search Criteria:</legend>
+                <legend> Common Search Criteria:</legend>
                <table border="0" width="100%" class="table">
                   <colgroup>
                      <col width="40%">
                      <col width="20%">
                      <col width="20%">
                      <col width="20%">
-                  </colgroup>
-                  <tr>
+                  </colgroup> 
+                    <tr>
                      <td>Policy #:</td>
-                     <td colspan="3"><input type="text">
+                     <td colspan="3"><input type="text"  [(ngModel)]="PolicySearch.policyNum" name="policyNum"  (keyup.enter)="Search(PolicySearch)">
                      <input type="button" id="btnSearchFromImage" value="Search from Image" />
                      </td>
                   </tr>
                   <tr>
                      <td>Insured File As Name :</td>
                      <td colspan="3">
-                        <input type="text" [(ngModel)]="PolicySearch.InsuredFileAsName" name="InsuredFileAsName" (keyup)="onKey($event)" style="width:100%">
+                        <input type="text" [(ngModel)]="PolicySearch.InsuredFileAsName" name="InsuredFileAsName" (keyup.enter)="Search(PolicySearch)" style="width:100%">
                      </td>
                   </tr>
                   <tr>

@@ -1,0 +1,91 @@
+    fieldset 
+	{
+		border: 1px solid #ddd !important;
+		margin: 0;
+		xmin-width: 0;
+		padding: 10px;       
+		position: relative;
+		border-radius:4px;
+		background-color:#f5f5f5;
+		padding-left:10px!important;
+        margin: 10px 0px 0px 0px;
+	}	
+    .container {
+        margin-left: 0;
+        padding-left:0px;
+        width:100%
+    }
+
+	
+    legend
+    {
+        font-size:14px;
+        font-weight:bold;
+        margin-bottom: 0px; 
+        width: auto; 
+        border: 1px solid #ddd;
+        border-radius: 4px; 
+        padding: 5px 5px 5px 10px; 
+        background-color: #ffffff;
+    }
+    body {
+        font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1em;
+    }
+    table tr td {
+        border: none;
+        padding: 5px 0px 0px 0px
+
+    }
+    .right{
+        text-align: right;
+    }
+    div.col-1 , div.col-2,div.col-3,div.col-4{
+        padding-right:15px 
+    } 
+    div.col-1 {
+    width:50%;
+    float: left; 
+    }
+    div.col-2 {
+    width:40%;
+    float: left; 
+    }
+    div.col-3{
+        width:30%;
+        float:left; 
+    }
+      div.col-4{
+        width:25%;
+        float:left; 
+    }
+    div.col-all {
+        width:100%;
+        float:left;
+        padding-left:15px ; 
+    }  
+
+    input, button, select, textarea{
+        line-height: normal;
+    }
+    .paddingTop0{
+        padding-top:0px
+    }
+    .txtBox-sm{
+        width:30%;
+    }
+    .txtBox-md{
+        width:50%;
+    }
+    .txtBox-lr{
+        width:100%
+    }
+    label , select , input  {
+        white-space: nowrap;
+        color:black;
+        font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+        font-size: 1em;
+        font-weight: normal
+    }
+   
+    

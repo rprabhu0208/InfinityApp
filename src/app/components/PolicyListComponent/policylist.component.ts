@@ -15,11 +15,10 @@ import { DataService } from '../../services/data.service'
 }) 
 export class PolicyListComponent implements OnInit { 
     _PolicySearchResults : PolicySearchResult[]; 
-    _InsuredNames : any; 
-     RouteService : Router; 
+    _InsuredNames : any;  
       @Input() type : string = 'default';
-     constructor(routerservice : Router, public dataservice : DataService) {   
-          this.RouteService = routerservice;
+     constructor(public router : Router, public dataservice : DataService) {   
+         
        
      } 
     
@@ -58,4 +57,7 @@ export class PolicyListComponent implements OnInit {
     //       this.dataservice.recentlyViewedPolicies.push(policy);
     //     this.RouteService.navigate(['/policy',policy.PolicyNum]);
     }  
+    showPolicyTransaction(policyTxnId: Number) : void {
+         this.router.navigate(['policy',policyTxnId]); 
+    }
 }

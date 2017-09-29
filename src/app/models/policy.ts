@@ -1,3 +1,8 @@
+export class Policy {
+    policyTxnId : number;
+    insuredFileAsName : string;
+}
+
 export class PolicySearchResult{
     city: string;
     countryCode: string;
@@ -33,7 +38,7 @@ export class PolicySearchResult{
     isCancelled: boolean;
     isNonRenewable: boolean;
     policyEff: Date;
-    onWatchList: string
+    onWatchList: string; 
 }
 
 export class PolicySearch {

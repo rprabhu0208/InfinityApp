@@ -1,4 +1,396 @@
-<h2>Policy </h2>
-<form>
-    <input type="text" name="PolicyNum" [value]="policy.InsuredName" /> 
-</form>
+  <div class="container"> 
+      <div class=""><!--panel panel-default--> 
+         <div class=""><!--panel-body-->
+             <div class="col-2" style="padding-left:15px;">
+                <fieldset style="min-height:380px" > 
+               <legend> Insured/Policy Owner and Agency:</legend>
+               <table border="0" width="100%" class="table">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup> 
+                  <tr>
+                     <td><label >Insured File As Name :</label></td>
+                     <td colspan="3">
+                        <input type="text"  [(ngModel)]="policy.insuredFileAsName" name="InsuredFileAsName"  style="width:80%" >
+                     </td>
+                  </tr>
+                   <tr>
+                     <td><label ><input type="checkbox" name="Override" value="Like">  Sounds Like </label></td>
+                     <td colspan="3">
+                        <textarea rows="5" disabled style="resize: none;width:80%"></textarea>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td ><label >Agency File As Name :</label></td>
+                     <td colspan="3">
+                        <input type="text"  name="InsuredFileAsName"  style="width:80%" >
+                     </td>
+                  </tr>
+                   <tr>
+                    <td><label ><input type="checkbox"   name="Override" value="Like">  Sounds Like</label> </td>
+                     <td colspan="3">
+                        <textarea rows="5" disabled style="resize: none;width:80%"></textarea> 
+                     </td>
+                  </tr> 
+               </table>
+            </fieldset>  
+            </div> 
+            <div class="col-4">
+            <fieldset   style="min-height:380px" >
+               <legend>Transaction Information:</legend>
+               <table border="0" width="100%" class="table">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="60%"> 
+                  </colgroup>
+                  <tr>
+                     <td><label >Txn Type:</label></td>
+                     <td >  
+                         <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+                   <tr>
+                     <td><label >Version #:</label></td>
+                     <td >  
+                        <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+                   <tr>
+                     <td><label >Last Version #:</label></td>
+                     <td >  
+                         <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+                   <tr>
+                     <td><label >Renewal #:</label></td>
+                     <td >  
+                       <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+                   <tr>
+                     <td><label >Endorsement #:</label></td>
+                     <td >  
+                        <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+                     <tr>
+                     <td><label >Rewrite #:</label></td>
+                     <td >  
+                       <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+                   <tr>
+                     <td><label >Reinstatement #:</label></td>
+                     <td >  
+                       <input type="text" class="txtBox-sm" disabled >
+                     </td>
+                  </tr>
+               </table>
+            </fieldset> 
+         </div>
+         <div class="col-3"> 
+            <fieldset   style="min-height:380px">
+               <legend>Premiums, Taxes and Fees</legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="60%"> 
+                  </colgroup>
+                   <tr>
+                     <td><label > Annual Full Term :</label></td>
+                     <td >  
+                         <input type="text"   disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Actual Full Term :</label></td>
+                     <td >  
+                         <input type="text"   disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Written Premium :</label></td>
+                     <td >  
+                         <input type="text"   disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Term Written Premium :</label></td>
+                     <td >  
+                         <input type="text"    disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Written Taxes and Fees :</label></td>
+                     <td >  
+                         <input type="text"  disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Total Txn Written :</label></td>
+                     <td >  
+                         <input type="text"  disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Commission Rate :</label></td>
+                     <td >  
+                         <input type="text"    disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Commission Amount :</label></td>
+                     <td >  
+                         <input type="text"  disabled >
+                     </td>
+                  </tr><tr>
+                     <td><label > Balance Due :</label></td>
+                     <td >  
+                         <input type="text"   disabled >
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><label > Suspense Amt :</label> </td>
+                     <td >  
+                         <input type="text"   disabled >
+                     </td>
+                  </tr>
+               </table>
+            </fieldset> 
+            </div>
+         <div class="clear"></div>
+         <div class="col-all" >
+            <fieldset >
+               <legend> Policy Information</legend>
+               <div class="col-3" >
+                  <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="60%"> 
+                  </colgroup>
+                    <tr>
+                        <td><label  >Sub-Company :</label></td>
+                        <td >  
+                            <select style="width:90%"    [(ngModel)]="policy.SubCompanyCode"> 
+                            <option value="" >All</option>
+                            <option *ngFor="let subcompany of subCompanies;"  [value]="subcompany.subCompanyCode" > {{subcompany.subCompanyName}}</option>  
+                         </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label >Policy # :</label></td>
+                        <td >  
+                            <input type="text"  style="width:90%"  disabled >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label  >Policy Type :</label></td>
+                        <td >  
+                          <select style="width:90%">
+                             <option value="">All</option>
+                         </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label >Term Type :</label></td>
+                        <td >  
+                           <select style="width:90%">
+                             <option value="">All</option>
+                         </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label  >Underwriting Asst :</label></td>
+                        <td >  
+                           <select style="width:90%">
+                             <option value="">All</option>
+                         </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label  >Underwriter :</label></td>
+                        <td >  
+                            <select style="width:90%">
+                             <option value="">All</option>
+                         </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label  >Renewal Option :</label></td>
+                        <td >  
+                            <select style="width:90%">
+                                <option value="">All</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label  >Declination Category :</label></td>
+                        <td >  
+                             <select style="width:90%">
+                                <option value="">All</option>
+                              </select>
+                        </td>
+                    </tr>
+                   </table>
+               </div>
+               <div class="col-3">
+                   <table class="table" style="width:100%; ">
+                  <colgroup>
+                     <col width="25%">
+                     <col width="25%"> 
+                     <col width="25%"> 
+                     <col width="25%"> 
+                  </colgroup>
+                    <tr>
+                        <td ><label  >Policy Year :</label></td>
+                        <td >  
+                            <input  type="text" class="txtBox-lr" disabled >
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" value=""  >  Watch List
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label  >Country :</label></td>
+                        <td >  
+                           <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td>
+                        <td><label  > State/Province: </label></td>
+                        <td>
+                               <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label  >Effective :</label></td>
+                        <td >  
+                            <input type="text"  class="txtBox-lr" disabled >
+                        </td>
+                        <td><label  >Expiration: </label></td>
+                        <td>   <input type="text"  class="txtBox-lr" disabled >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label  >Currency :</label></td>
+                        <td colspan="3">   
+                              <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td ><label  >SL Licence # :</label></td>
+                        <td colspan="3">  
+                               <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td ><label  >Payment Plan :</label></td>
+                        <td colspan="3">   
+                               <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td> 
+                    </tr>
+                     <tr>
+                        <td ><label  >Billed To :</label></td>
+                        <td colspan="3">   
+                               <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td><label  >Agent Contract :</label></td>
+                        <td  colspan="3">  
+                            <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td  colspan="3" >  
+                           <input type="checkbox"  > Facultative Reinsurance
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label  >Decl. Type:</label></td>
+                        <td  colspan="3">  
+                            <select style="width:100%">
+                                <option value="">All</option>
+                              </select>
+                        </td>
+                    </tr>
+                   </table>
+               </div> 
+                <div class="col-3">
+                   <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="60%">  
+                  </colgroup>
+                    <tr>
+                        <td ><label  >Original Inception :</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td ><label  >Equity Date :</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td ><label  >Rate Date :</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td>
+                     
+                    </tr>
+                    <tr>
+                        <td ><label  >Billing Method :</label></td>
+                        <td  >  
+                            <input type="text" disabled >
+                        </td> 
+                    </tr> 
+                    <tr>
+                        <td ><label  >Entered Date :</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td> 
+                    </tr> 
+                     <tr>
+                        <td ><label  >Received Date :</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td> 
+                    </tr> 
+                     <tr>
+                        <td ><label  >Issued Date :</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td> 
+                    </tr> 
+                    <tr>
+                        <td><label  >Previous Policy #:</label></td>
+                        <td >  
+                            <input type="text" disabled >
+                        </td>
+                    </tr>
+                   </table>
+               </div> 
+            </fieldset>
+            </div> 
+      </div>
+   </div>

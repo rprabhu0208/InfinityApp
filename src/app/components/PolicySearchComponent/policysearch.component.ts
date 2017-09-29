@@ -35,9 +35,7 @@ export class PolicySearchComponent implements OnInit {
     ngOnInit() { 
         this.AccordionIndex = 0; 
         this.PolicySearch = new PolicySearch()
-        this.PolicySearch.InsuredNameOption = new Options();  
-        console.log("subcompanycode")
-        console.log(this.PolicySearch.SubCompanyCode)
+        this.PolicySearch.InsuredNameOption = new Options();   
         this.DB.GetMetaData().then(
         (metadata: any) => {  
             this.subCompanies = metadata.subCompanyResults;  
@@ -56,13 +54,12 @@ export class PolicySearchComponent implements OnInit {
     onTabOpen(event:any){ 
         this.AccordionIndex = event.index; 
     }
-    onKey(event: any){  
-        if(event.keyCode == 13)
-            this.Search(this.PolicySearch); 
-        return
-    }
+    // onKey(event: any){  
+    //     if(event.keyCode == 13)
+    //         this.Search(this.PolicySearch); 
+    //     return
+    // }
     Search(policysearch:any){     
-        
         let params: URLSearchParams = new URLSearchParams(); 
         // if(policysearch.InsuredName != null &&  policysearch.InsuredNameOption != null ){
         //     if(policysearch.InsuredNameOption.SoundsLike != null && policysearch.InsuredNameOption.SoundsLike)

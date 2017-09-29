@@ -22,7 +22,9 @@
         "styles.css"
          ,"../node_modules/bootstrap/dist/css/bootstrap.css"
       ],
-      "scripts": ["../node_modules/bootstrap/dist/js/bootstrap.js"],
+      "scripts": [
+        "../src/assets/jquery-3.2.1.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

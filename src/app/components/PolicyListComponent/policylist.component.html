@@ -37,7 +37,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr style="white-space: nowrap" *ngFor="let item of mf.data">
+            <tr style="white-space: nowrap" *ngFor="let item of mf.data" class="pointer"  (click)="showPolicyTransaction(item.policyTxnId)">
                 <td>{{item.subCompanyName}}</td>
                 <td>{{item.insuredFileAsName}}</td>
                 <td>{{item.policyNum}}</td> 

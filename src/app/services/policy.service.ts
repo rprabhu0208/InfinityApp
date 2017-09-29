@@ -9,8 +9,9 @@ export class PolicyService {
   http :any;
    PolicySearchResults : PolicySearchResult[];
     recentlyViewedPolicies: PolicySearchResult[];  
-  constructor(httpClient: HttpClient) {
-    this.http = httpClient;
+
+    constructor(httpClient: HttpClient) {
+      this.http = httpClient;
   }
 
    
