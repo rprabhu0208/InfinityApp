@@ -1,0 +1,2936 @@
+{
+    "metadata" : {
+
+
+    
+
+    "subCompanyResults": [
+        {
+            "subCompanyCode": "AAV",
+            "subCompanyName": "Avemco Insurance Company"
+        },
+        {
+            "subCompanyCode": "ARC",
+            "subCompanyName": "Artisan Contractors"
+        },
+        {
+            "subCompanyCode": "CEC",
+            "subCompanyName": "Contractors Environmental"
+        },
+        {
+            "subCompanyCode": "CPR",
+            "subCompanyName": "Construction Property Risks"
+        },
+        {
+            "subCompanyCode": "DFP",
+            "subCompanyName": "Diversified Financial Products"
+        },
+        {
+            "subCompanyCode": "DIC",
+            "subCompanyName": "Difference in Condition"
+        },
+        {
+            "subCompanyCode": "ECL",
+            "subCompanyName": "Excess Casualty"
+        },
+        {
+            "subCompanyCode": "EPL",
+            "subCompanyName": "Employment Practices Liability"
+        },
+        {
+            "subCompanyCode": "FID",
+            "subCompanyName": "Fidelity "
+        },
+        {
+            "subCompanyCode": "KRI",
+            "subCompanyName": "Kidnap and Ransom Insurance"
+        },
+        {
+            "subCompanyCode": "LPL",
+            "subCompanyName": "Lawyers Professional Liability"
+        },
+        {
+            "subCompanyCode": "MPL",
+            "subCompanyName": "Miscellaneous Professional Liability"
+        },
+        {
+            "subCompanyCode": "PCI",
+            "subCompanyName": "Product Contamination Insurance"
+        },
+        {
+            "subCompanyCode": "PCL",
+            "subCompanyName": "Primary Casualty"
+        },
+        {
+            "subCompanyCode": "PIA",
+            "subCompanyName": "PIA - Other"
+        },
+        {
+            "subCompanyCode": "RAM",
+            "subCompanyName": "Architects & Engineers and Contractors Professional Liability"
+        },
+        {
+            "subCompanyCode": "RRI",
+            "subCompanyName": "Restaurant Recovery Insurance"
+        },
+        {
+            "subCompanyCode": "SCL",
+            "subCompanyName": "Select Casualty"
+        },
+        {
+            "subCompanyCode": "TPR",
+            "subCompanyName": "Technical Property Risks"
+        },
+        {
+            "subCompanyCode": "UAV",
+            "subCompanyName": "US Specialty Insurance Company Aviation"
+        }
+    ],
+    "stateResults": [
+        {
+            "stateId": 1,
+            "stateName": "Alabama"
+        },
+        {
+            "stateId": 2,
+            "stateName": "Alaska"
+        },
+        {
+            "stateId": 3,
+            "stateName": "American Samoa"
+        },
+        {
+            "stateId": 4,
+            "stateName": "Arizona"
+        },
+        {
+            "stateId": 5,
+            "stateName": "Arkansas"
+        },
+        {
+            "stateId": 6,
+            "stateName": "California"
+        },
+        {
+            "stateId": 7,
+            "stateName": "Colorado"
+        },
+        {
+            "stateId": 8,
+            "stateName": "Connecticut"
+        },
+        {
+            "stateId": 9,
+            "stateName": "Delaware"
+        },
+        {
+            "stateId": 10,
+            "stateName": "District of Columbia"
+        },
+        {
+            "stateId": 11,
+            "stateName": "Florida"
+        },
+        {
+            "stateId": 12,
+            "stateName": "Georgia"
+        },
+        {
+            "stateId": 13,
+            "stateName": "Guam"
+        },
+        {
+            "stateId": 14,
+            "stateName": "Hawaii"
+        },
+        {
+            "stateId": 15,
+            "stateName": "Idaho"
+        },
+        {
+            "stateId": 16,
+            "stateName": "Illinois"
+        },
+        {
+            "stateId": 17,
+            "stateName": "Indiana"
+        },
+        {
+            "stateId": 18,
+            "stateName": "Iowa"
+        },
+        {
+            "stateId": 19,
+            "stateName": "Kansas"
+        },
+        {
+            "stateId": 20,
+            "stateName": "Kentucky"
+        },
+        {
+            "stateId": 21,
+            "stateName": "Louisiana"
+        },
+        {
+            "stateId": 22,
+            "stateName": "Maine"
+        },
+        {
+            "stateId": 23,
+            "stateName": "Marshall Islands"
+        },
+        {
+            "stateId": 24,
+            "stateName": "Maryland"
+        },
+        {
+            "stateId": 25,
+            "stateName": "Massachusetts"
+        },
+        {
+            "stateId": 26,
+            "stateName": "Michigan"
+        },
+        {
+            "stateId": 27,
+            "stateName": "Minnesota"
+        },
+        {
+            "stateId": 28,
+            "stateName": "Mississippi"
+        },
+        {
+            "stateId": 29,
+            "stateName": "Missouri"
+        },
+        {
+            "stateId": 30,
+            "stateName": "Montana"
+        },
+        {
+            "stateId": 31,
+            "stateName": "Nebraska"
+        },
+        {
+            "stateId": 32,
+            "stateName": "Nevada"
+        },
+        {
+            "stateId": 33,
+            "stateName": "New Hampshire"
+        },
+        {
+            "stateId": 34,
+            "stateName": "New Jersey"
+        },
+        {
+            "stateId": 35,
+            "stateName": "New Mexico"
+        },
+        {
+            "stateId": 36,
+            "stateName": "New York"
+        },
+        {
+            "stateId": 37,
+            "stateName": "North Carolina"
+        },
+        {
+            "stateId": 38,
+            "stateName": "North Dakota"
+        },
+        {
+            "stateId": 39,
+            "stateName": "Northern Mariana Islands"
+        },
+        {
+            "stateId": 40,
+            "stateName": "Ohio"
+        },
+        {
+            "stateId": 41,
+            "stateName": "Oklahoma"
+        },
+        {
+            "stateId": 42,
+            "stateName": "Oregon"
+        },
+        {
+            "stateId": 43,
+            "stateName": "Palau"
+        },
+        {
+            "stateId": 44,
+            "stateName": "Pennsylvania"
+        },
+        {
+            "stateId": 45,
+            "stateName": "Puerto Rico"
+        },
+        {
+            "stateId": 46,
+            "stateName": "Rhode Island"
+        },
+        {
+            "stateId": 47,
+            "stateName": "South Carolina"
+        },
+        {
+            "stateId": 48,
+            "stateName": "South Dakota"
+        },
+        {
+            "stateId": 49,
+            "stateName": "Tennessee"
+        },
+        {
+            "stateId": 50,
+            "stateName": "Texas"
+        },
+        {
+            "stateId": 51,
+            "stateName": "Utah"
+        },
+        {
+            "stateId": 52,
+            "stateName": "Vermont"
+        },
+        {
+            "stateId": 53,
+            "stateName": "Virgin Islands"
+        },
+        {
+            "stateId": 54,
+            "stateName": "Virginia"
+        },
+        {
+            "stateId": 55,
+            "stateName": "Washington"
+        },
+        {
+            "stateId": 56,
+            "stateName": "West Virginia"
+        },
+        {
+            "stateId": 57,
+            "stateName": "Wisconsin"
+        },
+        {
+            "stateId": 58,
+            "stateName": "Wyoming"
+        },
+        {
+            "stateId": 59,
+            "stateName": "Alberta"
+        },
+        {
+            "stateId": 60,
+            "stateName": "British Columbia"
+        },
+        {
+            "stateId": 61,
+            "stateName": "Manitoba"
+        },
+        {
+            "stateId": 62,
+            "stateName": "New Brunswick"
+        },
+        {
+            "stateId": 63,
+            "stateName": "Newfoundland and Labrador"
+        },
+        {
+            "stateId": 64,
+            "stateName": "Nova Scotia"
+        },
+        {
+            "stateId": 65,
+            "stateName": "Northwest Territories"
+        },
+        {
+            "stateId": 66,
+            "stateName": "Nunavut"
+        },
+        {
+            "stateId": 67,
+            "stateName": "Ontario"
+        },
+        {
+            "stateId": 68,
+            "stateName": "Prince Edward Island"
+        },
+        {
+            "stateId": 69,
+            "stateName": "Quebec"
+        },
+        {
+            "stateId": 70,
+            "stateName": "Saskatchewan"
+        },
+        {
+            "stateId": 71,
+            "stateName": "Yukon"
+        },
+        {
+            "stateId": 72,
+            "stateName": "Aguascalientes"
+        },
+        {
+            "stateId": 73,
+            "stateName": "Baja California Norte"
+        },
+        {
+            "stateId": 74,
+            "stateName": "Baja California Sur"
+        },
+        {
+            "stateId": 75,
+            "stateName": "Chihuahua"
+        },
+        {
+            "stateId": 76,
+            "stateName": "Colima"
+        },
+        {
+            "stateId": 77,
+            "stateName": "Campeche"
+        },
+        {
+            "stateId": 78,
+            "stateName": "Coahuila"
+        },
+        {
+            "stateId": 79,
+            "stateName": "Chiapas"
+        },
+        {
+            "stateId": 80,
+            "stateName": "Distrito Federal"
+        },
+        {
+            "stateId": 81,
+            "stateName": "Durango"
+        },
+        {
+            "stateId": 82,
+            "stateName": "Guerrero"
+        },
+        {
+            "stateId": 83,
+            "stateName": "Guanajuato"
+        },
+        {
+            "stateId": 84,
+            "stateName": "Hidalgo"
+        },
+        {
+            "stateId": 85,
+            "stateName": "Jalisco"
+        },
+        {
+            "stateId": 86,
+            "stateName": "Michoacan"
+        },
+        {
+            "stateId": 87,
+            "stateName": "Morelos"
+        },
+        {
+            "stateId": 88,
+            "stateName": "Nayarit"
+        },
+        {
+            "stateId": 89,
+            "stateName": "Nuevo Leon"
+        },
+        {
+            "stateId": 90,
+            "stateName": "Oaxaca"
+        },
+        {
+            "stateId": 91,
+            "stateName": "Puebla"
+        },
+        {
+            "stateId": 92,
+            "stateName": "Quintana Roo"
+        },
+        {
+            "stateId": 93,
+            "stateName": "Queretaro"
+        },
+        {
+            "stateId": 94,
+            "stateName": "Sinaloa"
+        },
+        {
+            "stateId": 95,
+            "stateName": "San Luis Potosi"
+        },
+        {
+            "stateId": 96,
+            "stateName": "Sonora"
+        },
+        {
+            "stateId": 97,
+            "stateName": "Tabasco"
+        },
+        {
+            "stateId": 98,
+            "stateName": "Tlaxcala"
+        },
+        {
+            "stateId": 99,
+            "stateName": "Tamaulipas"
+        },
+        {
+            "stateId": 100,
+            "stateName": "Veracruz"
+        },
+        {
+            "stateId": 101,
+            "stateName": "Yucatan"
+        },
+        {
+            "stateId": 102,
+            "stateName": "Zacatecas"
+        },
+        {
+            "stateId": 103,
+            "stateName": "Bahamas"
+        },
+        {
+            "stateId": 104,
+            "stateName": "Federated States Of Micronesia"
+        },
+        {
+            "stateId": 105,
+            "stateName": "Armed Forces Canada & Others"
+        },
+        {
+            "stateId": 106,
+            "stateName": "Armed Forces Americas"
+        },
+        {
+            "stateId": 107,
+            "stateName": "Armed Forces Pacific"
+        },
+        {
+            "stateId": 108,
+            "stateName": "Bermuda/BM"
+        },
+        {
+            "stateId": 109,
+            "stateName": " "
+        },
+        {
+            "stateId": 110,
+            "stateName": " "
+        },
+        {
+            "stateId": 111,
+            "stateName": "Unknown"
+        },
+        {
+            "stateId": 112,
+            "stateName": "Aruba"
+        },
+        {
+            "stateId": 113,
+            "stateName": "Mexico State"
+        },
+        {
+            "stateId": 114,
+            "stateName": "IOT/Terr"
+        },
+        {
+            "stateId": 116,
+            "stateName": "United Kingdom"
+        },
+        {
+            "stateId": 117,
+            "stateName": "New South Wales"
+        },
+        {
+            "stateId": 118,
+            "stateName": "Sao Paulo"
+        },
+        {
+            "stateId": 119,
+            "stateName": "Venezuela"
+        },
+        {
+            "stateId": 120,
+            "stateName": "Haiti All States"
+        },
+        {
+            "stateId": 121,
+            "stateName": "Dominica All States"
+        },
+        {
+            "stateId": 122,
+            "stateName": "Littoral"
+        },
+        {
+            "stateId": 123,
+            "stateName": "Kanagawa"
+        },
+        {
+            "stateId": 125,
+            "stateName": "Queensland"
+        },
+        {
+            "stateId": 126,
+            "stateName": "South Australia"
+        },
+        {
+            "stateId": 127,
+            "stateName": "Tasmania"
+        },
+        {
+            "stateId": 128,
+            "stateName": "Victoria"
+        },
+        {
+            "stateId": 129,
+            "stateName": "Western Australia"
+        },
+        {
+            "stateId": 130,
+            "stateName": "Australian Capital Territory"
+        },
+        {
+            "stateId": 131,
+            "stateName": "Northern Territory"
+        },
+        {
+            "stateId": 132,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 133,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 134,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 135,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 136,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 137,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 143,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 144,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 145,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 146,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 147,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 148,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 149,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 150,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 152,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 153,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 154,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 155,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 164,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 165,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 166,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 167,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 168,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 169,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 170,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 171,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 172,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 173,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 174,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 175,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 176,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 177,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 178,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 179,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 181,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 182,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 183,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 184,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 185,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 186,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 187,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 188,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 189,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 190,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 191,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 194,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 195,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 196,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 197,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 198,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 199,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 200,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 201,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 202,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 204,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 205,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 209,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 210,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 211,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 212,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 213,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 214,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 215,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 216,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 217,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 218,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 219,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 220,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 221,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 222,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 223,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 224,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 225,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 226,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 227,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 228,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 229,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 230,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 231,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 232,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 233,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 234,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 235,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 236,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 237,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 238,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 239,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 240,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 241,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 242,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 243,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 245,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 246,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 248,
+            "stateName": "Christmas Island"
+        },
+        {
+            "stateId": 249,
+            "stateName": "Cocos (Keeling) Island"
+        },
+        {
+            "stateId": 250,
+            "stateName": "Jervis Bay"
+        },
+        {
+            "stateId": 251,
+            "stateName": "Lorde Howe Island"
+        },
+        {
+            "stateId": 252,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 253,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 254,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 255,
+            "stateName": "None"
+        },
+        {
+            "stateId": 257,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 264,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 265,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 266,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 267,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 268,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 269,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 272,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 273,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 274,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 275,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 276,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 277,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 278,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 279,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 280,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 281,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 282,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 284,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 285,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 286,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 287,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 288,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 289,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 290,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 291,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 292,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 293,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 294,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 295,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 296,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 297,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 298,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 299,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 300,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 301,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 302,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 303,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 304,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 305,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 306,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 307,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 308,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 309,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 310,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 311,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 312,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 313,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 314,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 315,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 316,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 317,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 318,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 319,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 320,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 321,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 322,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 323,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 324,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 325,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 326,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 327,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 328,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 329,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 330,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 331,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 332,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 333,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 334,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 335,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 336,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 337,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 338,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 339,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 340,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 341,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 342,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 343,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 344,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 345,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 346,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 347,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 348,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 349,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 350,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 351,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 352,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 353,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 354,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 355,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 356,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 357,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 358,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 360,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 361,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 362,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 363,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 364,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 365,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 366,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 367,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 368,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 369,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 370,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 371,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 372,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 373,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 374,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 375,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 376,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 377,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 378,
+            "stateName": "XNone"
+        },
+        {
+            "stateId": 379,
+            "stateName": "XNone"
+        }
+    ],
+    "countryResults": [
+        {
+            "countryCode": "ABW",
+            "countryName": "ARUBA"
+        },
+        {
+            "countryCode": "AFG",
+            "countryName": "AFGHANISTAN"
+        },
+        {
+            "countryCode": "AGO",
+            "countryName": "ANGOLA"
+        },
+        {
+            "countryCode": "AIA",
+            "countryName": "ANGUILLA"
+        },
+        {
+            "countryCode": "ALA",
+            "countryName": "ÅLAND ISLANDS"
+        },
+        {
+            "countryCode": "ALB",
+            "countryName": "ALBANIA"
+        },
+        {
+            "countryCode": "AND",
+            "countryName": "ANDORRA"
+        },
+        {
+            "countryCode": "ANT",
+            "countryName": "NETHERLANDS ANTILLES"
+        },
+        {
+            "countryCode": "ARE",
+            "countryName": "UNITED ARAB EMIRATES"
+        },
+        {
+            "countryCode": "ARG",
+            "countryName": "ARGENTINA"
+        },
+        {
+            "countryCode": "ARM",
+            "countryName": "ARMENIA"
+        },
+        {
+            "countryCode": "ASM",
+            "countryName": "AMERICAN SAMOA"
+        },
+        {
+            "countryCode": "ATA",
+            "countryName": "ANTARCTICA"
+        },
+        {
+            "countryCode": "ATF",
+            "countryName": "FRENCH SOUTHERN TERRITORIES"
+        },
+        {
+            "countryCode": "ATG",
+            "countryName": "ANTIGUA AND BARBUDA"
+        },
+        {
+            "countryCode": "AUS",
+            "countryName": "AUSTRALIA"
+        },
+        {
+            "countryCode": "AUT",
+            "countryName": "AUSTRIA"
+        },
+        {
+            "countryCode": "AZE",
+            "countryName": "AZERBAIJAN"
+        },
+        {
+            "countryCode": "BDI",
+            "countryName": "BURUNDI"
+        },
+        {
+            "countryCode": "BEL",
+            "countryName": "BELGIUM"
+        },
+        {
+            "countryCode": "BEN",
+            "countryName": "BENIN"
+        },
+        {
+            "countryCode": "BFA",
+            "countryName": "BURKINA FASO"
+        },
+        {
+            "countryCode": "BGD",
+            "countryName": "BANGLADESH"
+        },
+        {
+            "countryCode": "BGR",
+            "countryName": "BULGARIA"
+        },
+        {
+            "countryCode": "BHR",
+            "countryName": "BAHRAIN"
+        },
+        {
+            "countryCode": "BHS",
+            "countryName": "BAHAMAS"
+        },
+        {
+            "countryCode": "BIH",
+            "countryName": "BOSNIA AND HERZEGOVINA"
+        },
+        {
+            "countryCode": "BLR",
+            "countryName": "BELARUS"
+        },
+        {
+            "countryCode": "BLZ",
+            "countryName": "BELIZE"
+        },
+        {
+            "countryCode": "BMU",
+            "countryName": "BERMUDA"
+        },
+        {
+            "countryCode": "BOL",
+            "countryName": "BOLIVIA"
+        },
+        {
+            "countryCode": "BRA",
+            "countryName": "BRAZIL"
+        },
+        {
+            "countryCode": "BRB",
+            "countryName": "BARBADOS"
+        },
+        {
+            "countryCode": "BRN",
+            "countryName": "BRUNEI DARUSSALAM"
+        },
+        {
+            "countryCode": "BTN",
+            "countryName": "BHUTAN"
+        },
+        {
+            "countryCode": "BVT",
+            "countryName": "BOUVET ISLAND"
+        },
+        {
+            "countryCode": "BWA",
+            "countryName": "BOTSWANA"
+        },
+        {
+            "countryCode": "CAF",
+            "countryName": "CENTRAL AFRICAN REPUBLIC"
+        },
+        {
+            "countryCode": "CAN",
+            "countryName": "CANADA"
+        },
+        {
+            "countryCode": "CCK",
+            "countryName": "COCOS (KEELING) ISLANDS"
+        },
+        {
+            "countryCode": "CHE",
+            "countryName": "SWITZERLAND"
+        },
+        {
+            "countryCode": "CHL",
+            "countryName": "CHILE"
+        },
+        {
+            "countryCode": "CHN",
+            "countryName": "CHINA"
+        },
+        {
+            "countryCode": "CIV",
+            "countryName": "CÔTE D'IVOIRE (Ivory Coast)"
+        },
+        {
+            "countryCode": "CMR",
+            "countryName": "CAMEROON"
+        },
+        {
+            "countryCode": "COD",
+            "countryName": "CONGO (formerly Zaire)"
+        },
+        {
+            "countryCode": "COG",
+            "countryName": "CONGO, REPUBLIC OF"
+        },
+        {
+            "countryCode": "COK",
+            "countryName": "COOK ISLANDS"
+        },
+        {
+            "countryCode": "COL",
+            "countryName": "COLOMBIA"
+        },
+        {
+            "countryCode": "COM",
+            "countryName": "COMOROS"
+        },
+        {
+            "countryCode": "CPV",
+            "countryName": "CAPE VERDE"
+        },
+        {
+            "countryCode": "CRI",
+            "countryName": "COSTA RICA"
+        },
+        {
+            "countryCode": "CUB",
+            "countryName": "CUBA"
+        },
+        {
+            "countryCode": "CXR",
+            "countryName": "CHRISTMAS ISLAND"
+        },
+        {
+            "countryCode": "CYM",
+            "countryName": "CAYMAN ISLANDS"
+        },
+        {
+            "countryCode": "CYP",
+            "countryName": "CYPRUS"
+        },
+        {
+            "countryCode": "CZE",
+            "countryName": "CZECH REPUBLIC"
+        },
+        {
+            "countryCode": "DEU",
+            "countryName": "GERMANY"
+        },
+        {
+            "countryCode": "DJI",
+            "countryName": "DJIBOUTI"
+        },
+        {
+            "countryCode": "DMA",
+            "countryName": "DOMINICA"
+        },
+        {
+            "countryCode": "DNK",
+            "countryName": "DENMARK"
+        },
+        {
+            "countryCode": "DOM",
+            "countryName": "DOMINICAN REPUBLIC"
+        },
+        {
+            "countryCode": "DZA",
+            "countryName": "ALGERIA"
+        },
+        {
+            "countryCode": "ECU",
+            "countryName": "ECUADOR"
+        },
+        {
+            "countryCode": "EGY",
+            "countryName": "EGYPT"
+        },
+        {
+            "countryCode": "ERI",
+            "countryName": "ERITREA"
+        },
+        {
+            "countryCode": "ESH",
+            "countryName": "WESTERN SAHARA"
+        },
+        {
+            "countryCode": "ESP",
+            "countryName": "SPAIN"
+        },
+        {
+            "countryCode": "EST",
+            "countryName": "ESTONIA"
+        },
+        {
+            "countryCode": "ETH",
+            "countryName": "ETHIOPIA"
+        },
+        {
+            "countryCode": "FIN",
+            "countryName": "FINLAND"
+        },
+        {
+            "countryCode": "FJI",
+            "countryName": "FIJI"
+        },
+        {
+            "countryCode": "FLK",
+            "countryName": "FALKLAND ISLANDS (MALVINAS)"
+        },
+        {
+            "countryCode": "FRA",
+            "countryName": "FRANCE"
+        },
+        {
+            "countryCode": "FRO",
+            "countryName": "FAEROE ISLANDS"
+        },
+        {
+            "countryCode": "FSM",
+            "countryName": "MICRONESIA "
+        },
+        {
+            "countryCode": "GAB",
+            "countryName": "GABON"
+        },
+        {
+            "countryCode": "GBR",
+            "countryName": "UNITED KINGDOM"
+        },
+        {
+            "countryCode": "GEO",
+            "countryName": "GEORGIA"
+        },
+        {
+            "countryCode": "GGY",
+            "countryName": "GUERNSEY"
+        },
+        {
+            "countryCode": "GHA",
+            "countryName": "GHANA"
+        },
+        {
+            "countryCode": "GIB",
+            "countryName": "GIBRALTAR"
+        },
+        {
+            "countryCode": "GIN",
+            "countryName": "GUINEA"
+        },
+        {
+            "countryCode": "GLP",
+            "countryName": "GUADELOUPE"
+        },
+        {
+            "countryCode": "GMB",
+            "countryName": "GAMBIA, THE"
+        },
+        {
+            "countryCode": "GNB",
+            "countryName": "GUINEA-BISSAU"
+        },
+        {
+            "countryCode": "GNQ",
+            "countryName": "EQUATORIAL GUINEA"
+        },
+        {
+            "countryCode": "GRC",
+            "countryName": "GREECE"
+        },
+        {
+            "countryCode": "GRD",
+            "countryName": "GRENADA"
+        },
+        {
+            "countryCode": "GRL",
+            "countryName": "GREENLAND"
+        },
+        {
+            "countryCode": "GTM",
+            "countryName": "GUATEMALA"
+        },
+        {
+            "countryCode": "GUF",
+            "countryName": "FRENCH GUIANA"
+        },
+        {
+            "countryCode": "GUM",
+            "countryName": "GUAM"
+        },
+        {
+            "countryCode": "GUY",
+            "countryName": "GUYANA"
+        },
+        {
+            "countryCode": "HKG",
+            "countryName": "HONG KONG"
+        },
+        {
+            "countryCode": "HMD",
+            "countryName": "HEARD ISLAND AND MCDONALD ISLANDS"
+        },
+        {
+            "countryCode": "HND",
+            "countryName": "HONDURAS"
+        },
+        {
+            "countryCode": "HRV",
+            "countryName": "CROATIA (Hrvatska)"
+        },
+        {
+            "countryCode": "HTI",
+            "countryName": "HAITI"
+        },
+        {
+            "countryCode": "HUN",
+            "countryName": "HUNGARY"
+        },
+        {
+            "countryCode": "IDN",
+            "countryName": "INDONESIA"
+        },
+        {
+            "countryCode": "IMN",
+            "countryName": "ISLE OF MAN"
+        },
+        {
+            "countryCode": "IND",
+            "countryName": "INDIA"
+        },
+        {
+            "countryCode": "IOT",
+            "countryName": "BRITISH INDIAN OCEAN TERRITORY"
+        },
+        {
+            "countryCode": "IRL",
+            "countryName": "IRELAND"
+        },
+        {
+            "countryCode": "IRN",
+            "countryName": "IRAN"
+        },
+        {
+            "countryCode": "IRQ",
+            "countryName": "IRAQ"
+        },
+        {
+            "countryCode": "ISL",
+            "countryName": "ICELAND"
+        },
+        {
+            "countryCode": "ISR",
+            "countryName": "ISRAEL"
+        },
+        {
+            "countryCode": "ITA",
+            "countryName": "ITALY"
+        },
+        {
+            "countryCode": "JAM",
+            "countryName": "JAMAICA"
+        },
+        {
+            "countryCode": "JEY",
+            "countryName": "JERSEY"
+        },
+        {
+            "countryCode": "JOR",
+            "countryName": "JORDAN "
+        },
+        {
+            "countryCode": "JPN",
+            "countryName": "JAPAN"
+        },
+        {
+            "countryCode": "KAZ",
+            "countryName": "KAZAKHSTAN"
+        },
+        {
+            "countryCode": "KEN",
+            "countryName": "KENYA"
+        },
+        {
+            "countryCode": "KGZ",
+            "countryName": "KYRGYZSTAN"
+        },
+        {
+            "countryCode": "KHM",
+            "countryName": "CAMBODIA"
+        },
+        {
+            "countryCode": "KIR",
+            "countryName": "KIRIBATI"
+        },
+        {
+            "countryCode": "KNA",
+            "countryName": "SAINT KITTS AND NEVIS"
+        },
+        {
+            "countryCode": "KOR",
+            "countryName": "SOUTH KOREA"
+        },
+        {
+            "countryCode": "KWT",
+            "countryName": "KUWAIT"
+        },
+        {
+            "countryCode": "LAO",
+            "countryName": "LAO PEOPLE'S DEMOCRATIC REPUBLIC"
+        },
+        {
+            "countryCode": "LBN",
+            "countryName": "LEBANON"
+        },
+        {
+            "countryCode": "LBR",
+            "countryName": "LIBERIA"
+        },
+        {
+            "countryCode": "LBY",
+            "countryName": "LIBYA"
+        },
+        {
+            "countryCode": "LCA",
+            "countryName": "SAINT LUCIA"
+        },
+        {
+            "countryCode": "LIE",
+            "countryName": "LIECHTENSTEIN "
+        },
+        {
+            "countryCode": "LKA",
+            "countryName": "SRI LANKA (formerly Ceylon)"
+        },
+        {
+            "countryCode": "LSO",
+            "countryName": "LESOTHO"
+        },
+        {
+            "countryCode": "LTU",
+            "countryName": "LITHUANIA"
+        },
+        {
+            "countryCode": "LUX",
+            "countryName": "LUXEMBOURG"
+        },
+        {
+            "countryCode": "LVA",
+            "countryName": "LATVIA"
+        },
+        {
+            "countryCode": "MAC",
+            "countryName": "MACAO"
+        },
+        {
+            "countryCode": "MAR",
+            "countryName": "MOROCCO"
+        },
+        {
+            "countryCode": "MCO",
+            "countryName": "MONACO"
+        },
+        {
+            "countryCode": "MDA",
+            "countryName": "MOLDOVA"
+        },
+        {
+            "countryCode": "MDG",
+            "countryName": "MADAGASCAR"
+        },
+        {
+            "countryCode": "MDV",
+            "countryName": "MALDIVES"
+        },
+        {
+            "countryCode": "MEX",
+            "countryName": "MEXICO"
+        },
+        {
+            "countryCode": "MHL",
+            "countryName": "MARSHALL ISLANDS"
+        },
+        {
+            "countryCode": "MKD",
+            "countryName": "MACEDONIA "
+        },
+        {
+            "countryCode": "MLI",
+            "countryName": "MALI"
+        },
+        {
+            "countryCode": "MLT",
+            "countryName": "MALTA"
+        },
+        {
+            "countryCode": "MMR",
+            "countryName": "MYANMAR (formerly Burma)"
+        },
+        {
+            "countryCode": "MNE",
+            "countryName": "MONTENEGRO"
+        },
+        {
+            "countryCode": "MNG",
+            "countryName": "MONGOLIA"
+        },
+        {
+            "countryCode": "MNP",
+            "countryName": "NORTHERN MARIANA ISLANDS"
+        },
+        {
+            "countryCode": "MOZ",
+            "countryName": "MOZAMBIQUE (Moçambique)"
+        },
+        {
+            "countryCode": "MRT",
+            "countryName": "MAURITANIA"
+        },
+        {
+            "countryCode": "MSR",
+            "countryName": "MONTSERRAT"
+        },
+        {
+            "countryCode": "MTQ",
+            "countryName": "MARTINIQUE"
+        },
+        {
+            "countryCode": "MUS",
+            "countryName": "MAURITIUS"
+        },
+        {
+            "countryCode": "MWI",
+            "countryName": "MALAWI"
+        },
+        {
+            "countryCode": "MYS",
+            "countryName": "MALAYSIA"
+        },
+        {
+            "countryCode": "MYT",
+            "countryName": "MAYOTTE"
+        },
+        {
+            "countryCode": "NAM",
+            "countryName": "NAMIBIA"
+        },
+        {
+            "countryCode": "NCL",
+            "countryName": "NEW CALEDONIA"
+        },
+        {
+            "countryCode": "NER",
+            "countryName": "NIGER"
+        },
+        {
+            "countryCode": "NFK",
+            "countryName": "NORFOLK ISLAND"
+        },
+        {
+            "countryCode": "NGA",
+            "countryName": "NIGERIA"
+        },
+        {
+            "countryCode": "NIC",
+            "countryName": "NICARAGUA"
+        },
+        {
+            "countryCode": "NIU",
+            "countryName": "NIUE"
+        },
+        {
+            "countryCode": "NLD",
+            "countryName": "NETHERLANDS"
+        },
+        {
+            "countryCode": "NOR",
+            "countryName": "NORWAY"
+        },
+        {
+            "countryCode": "NPL",
+            "countryName": "NEPAL"
+        },
+        {
+            "countryCode": "NRU",
+            "countryName": "NAURU"
+        },
+        {
+            "countryCode": "NZL",
+            "countryName": "NEW ZEALAND"
+        },
+        {
+            "countryCode": "OMN",
+            "countryName": "OMAN"
+        },
+        {
+            "countryCode": "PAK",
+            "countryName": "PAKISTAN"
+        },
+        {
+            "countryCode": "PAN",
+            "countryName": "PANAMA"
+        },
+        {
+            "countryCode": "PCN",
+            "countryName": "PITCAIRN"
+        },
+        {
+            "countryCode": "PER",
+            "countryName": "PERU"
+        },
+        {
+            "countryCode": "PHL",
+            "countryName": "PHILIPPINES"
+        },
+        {
+            "countryCode": "PLW",
+            "countryName": "PALAU"
+        },
+        {
+            "countryCode": "PNG",
+            "countryName": "PAPUA NEW GUINEA"
+        },
+        {
+            "countryCode": "POL",
+            "countryName": "POLAND"
+        },
+        {
+            "countryCode": "PRI",
+            "countryName": "PUERTO RICO"
+        },
+        {
+            "countryCode": "PRK",
+            "countryName": "NORTH KOREA"
+        },
+        {
+            "countryCode": "PRT",
+            "countryName": "PORTUGAL"
+        },
+        {
+            "countryCode": "PRY",
+            "countryName": "PARAGUAY"
+        },
+        {
+            "countryCode": "PSE",
+            "countryName": "PALESTINIAN TERRITORIES"
+        },
+        {
+            "countryCode": "PYF",
+            "countryName": "FRENCH POLYNESIA"
+        },
+        {
+            "countryCode": "QAT",
+            "countryName": "QATAR"
+        },
+        {
+            "countryCode": "REU",
+            "countryName": "RÉUNION"
+        },
+        {
+            "countryCode": "ROU",
+            "countryName": "ROMANIA"
+        },
+        {
+            "countryCode": "RUS",
+            "countryName": "RUSSIAN FEDERATION"
+        },
+        {
+            "countryCode": "RWA",
+            "countryName": "RWANDA"
+        },
+        {
+            "countryCode": "SAU",
+            "countryName": "SAUDI ARABIA"
+        },
+        {
+            "countryCode": "SDN",
+            "countryName": "SUDAN"
+        },
+        {
+            "countryCode": "SEN",
+            "countryName": "SENEGAL"
+        },
+        {
+            "countryCode": "SGP",
+            "countryName": "SINGAPORE"
+        },
+        {
+            "countryCode": "SGS",
+            "countryName": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
+        },
+        {
+            "countryCode": "SHN",
+            "countryName": "SAINT HELENA"
+        },
+        {
+            "countryCode": "SJM",
+            "countryName": "SVALBARD AND JAN MAYEN"
+        },
+        {
+            "countryCode": "SLB",
+            "countryName": "SOLOMON ISLANDS"
+        },
+        {
+            "countryCode": "SLE",
+            "countryName": "SIERRA LEONE"
+        },
+        {
+            "countryCode": "SLV",
+            "countryName": "EL SALVADOR"
+        },
+        {
+            "countryCode": "SMR",
+            "countryName": "SAN MARINO (Republic of)"
+        },
+        {
+            "countryCode": "SOM",
+            "countryName": "SOMALIA"
+        },
+        {
+            "countryCode": "SPM",
+            "countryName": "SAINT PIERRE AND MIQUELON"
+        },
+        {
+            "countryCode": "SRB",
+            "countryName": "SERBIA"
+        },
+        {
+            "countryCode": "STP",
+            "countryName": "SAO TOME AND PRINCIPE"
+        },
+        {
+            "countryCode": "SUR",
+            "countryName": "SURINAME"
+        },
+        {
+            "countryCode": "SVK",
+            "countryName": "SLOVAKIA (Slovak Republic)"
+        },
+        {
+            "countryCode": "SVN",
+            "countryName": "SLOVENIA"
+        },
+        {
+            "countryCode": "SWE",
+            "countryName": "SWEDEN"
+        },
+        {
+            "countryCode": "SWZ",
+            "countryName": "SWAZILAND"
+        },
+        {
+            "countryCode": "SYC",
+            "countryName": "SEYCHELLES"
+        },
+        {
+            "countryCode": "SYR",
+            "countryName": "SYRIAN ARAB REPUBLIC"
+        },
+        {
+            "countryCode": "TCA",
+            "countryName": "TURKS AND CAICOS ISLANDS"
+        },
+        {
+            "countryCode": "TCD",
+            "countryName": "CHAD (Tchad)"
+        },
+        {
+            "countryCode": "TGO",
+            "countryName": "TOGO"
+        },
+        {
+            "countryCode": "THA",
+            "countryName": "THAILAND"
+        },
+        {
+            "countryCode": "TJK",
+            "countryName": "TAJIKISTAN"
+        },
+        {
+            "countryCode": "TKL",
+            "countryName": "TOKELAU"
+        },
+        {
+            "countryCode": "TKM",
+            "countryName": "TURKMENISTAN"
+        },
+        {
+            "countryCode": "TLS",
+            "countryName": "TIMOR-LESTE "
+        },
+        {
+            "countryCode": "TON",
+            "countryName": "TONGA"
+        },
+        {
+            "countryCode": "TTO",
+            "countryName": "TRINIDAD AND TOBAGO"
+        },
+        {
+            "countryCode": "TUN",
+            "countryName": "TUNISIA"
+        },
+        {
+            "countryCode": "TUR",
+            "countryName": "TURKEY"
+        },
+        {
+            "countryCode": "TUV",
+            "countryName": "TUVALU"
+        },
+        {
+            "countryCode": "TWN",
+            "countryName": "TAIWAN"
+        },
+        {
+            "countryCode": "TZA",
+            "countryName": "TANZANIA"
+        },
+        {
+            "countryCode": "UGA",
+            "countryName": "UGANDA"
+        },
+        {
+            "countryCode": "UKR",
+            "countryName": "UKRAINE"
+        },
+        {
+            "countryCode": "UMI",
+            "countryName": "UNITED STATES MINOR OUTLYING ISLANDS"
+        },
+        {
+            "countryCode": "URY",
+            "countryName": "URUGUAY"
+        },
+        {
+            "countryCode": "USA",
+            "countryName": "UNITED STATES"
+        },
+        {
+            "countryCode": "UZB",
+            "countryName": "UZBEKISTAN"
+        },
+        {
+            "countryCode": "VAT",
+            "countryName": "VATICAN CITY (Holy See)"
+        },
+        {
+            "countryCode": "VCT",
+            "countryName": "SAINT VINCENT AND THE GRENADINES"
+        },
+        {
+            "countryCode": "VEN",
+            "countryName": "VENEZUELA"
+        },
+        {
+            "countryCode": "VGB",
+            "countryName": "VIRGIN ISLANDS, BRITISH"
+        },
+        {
+            "countryCode": "VIR",
+            "countryName": "VIRGIN ISLANDS, U.S."
+        },
+        {
+            "countryCode": "VNM",
+            "countryName": "VIET NAM"
+        },
+        {
+            "countryCode": "VUT",
+            "countryName": "VANUATU"
+        },
+        {
+            "countryCode": "WLF",
+            "countryName": "WALLIS AND FUTUNA"
+        },
+        {
+            "countryCode": "WSM",
+            "countryName": "SAMOA"
+        },
+        {
+            "countryCode": "YEM",
+            "countryName": "YEMEN"
+        },
+        {
+            "countryCode": "ZAF",
+            "countryName": "SOUTH AFRICA (Zuid Afrika)"
+        },
+        {
+            "countryCode": "ZMB",
+            "countryName": "ZAMBIA (formerly Northern Rhodesia)"
+        },
+        {
+            "countryCode": "ZWE",
+            "countryName": "ZIMBABWE"
+        }
+    ],
+    "nameTypeResults": [
+        {
+            "nameTypeId": 1,
+            "nameTypeCode": "AG",
+            "nameType": "Agency"
+        },
+        {
+            "nameTypeId": 2,
+            "nameTypeCode": "AI",
+            "nameType": "Additional Insured"
+        },
+        {
+            "nameTypeId": 3,
+            "nameTypeCode": "CL",
+            "nameType": "Claimant"
+        },
+        {
+            "nameTypeId": 4,
+            "nameTypeCode": "IN",
+            "nameType": "Insured"
+        },
+        {
+            "nameTypeId": 5,
+            "nameTypeCode": "IS",
+            "nameType": "Inspector"
+        },
+        {
+            "nameTypeId": 6,
+            "nameTypeCode": "LP",
+            "nameType": "Loss Payee"
+        },
+        {
+            "nameTypeId": 7,
+            "nameTypeCode": "MG",
+            "nameType": "Mortgagee"
+        },
+        {
+            "nameTypeId": 8,
+            "nameTypeCode": "OP",
+            "nameType": "Other Payor"
+        },
+        {
+            "nameTypeId": 9,
+            "nameTypeCode": "EW",
+            "nameType": "Expert Witness"
+        },
+        {
+            "nameTypeId": 10,
+            "nameTypeCode": "DC",
+            "nameType": "Defense Counsel"
+        },
+        {
+            "nameTypeId": 11,
+            "nameTypeCode": "PC",
+            "nameType": "Plaintiff Counsel"
+        },
+        {
+            "nameTypeId": 12,
+            "nameTypeCode": "MD",
+            "nameType": "Physician"
+        },
+        {
+            "nameTypeId": 13,
+            "nameTypeCode": "PR",
+            "nameType": "Prospect"
+        },
+        {
+            "nameTypeId": 14,
+            "nameTypeCode": "AT",
+            "nameType": "Agent"
+        },
+        {
+            "nameTypeId": 15,
+            "nameTypeCode": "IR",
+            "nameType": "Insured Risk"
+        },
+        {
+            "nameTypeId": 16,
+            "nameTypeCode": "RE",
+            "nameType": "Reinsurance Company"
+        },
+        {
+            "nameTypeId": 17,
+            "nameTypeCode": "CA",
+            "nameType": "Carrier"
+        },
+        {
+            "nameTypeId": 18,
+            "nameTypeCode": "CD",
+            "nameType": "Claims Administrator"
+        },
+        {
+            "nameTypeId": 19,
+            "nameTypeCode": "EC",
+            "nameType": "Excess Carrier"
+        },
+        {
+            "nameTypeId": 20,
+            "nameTypeCode": "TP",
+            "nameType": "TPA"
+        },
+        {
+            "nameTypeId": 21,
+            "nameTypeCode": "SH",
+            "nameType": "SL License Holder"
+        },
+        {
+            "nameTypeId": 22,
+            "nameTypeCode": "PS",
+            "nameType": "PIA SL License Holder"
+        },
+        {
+            "nameTypeId": 29,
+            "nameTypeCode": "AD",
+            "nameType": "Adjuster External"
+        },
+        {
+            "nameTypeId": 30,
+            "nameTypeCode": "CC",
+            "nameType": "Collections Contact"
+        },
+        {
+            "nameTypeId": 31,
+            "nameTypeCode": "CP",
+            "nameType": "Compliance P.O.C."
+        },
+        {
+            "nameTypeId": 32,
+            "nameTypeCode": "MR",
+            "nameType": "Mediator"
+        },
+        {
+            "nameTypeId": 33,
+            "nameTypeCode": "VR",
+            "nameType": "Claims Expense Vendor"
+        },
+        {
+            "nameTypeId": 34,
+            "nameTypeCode": "CS",
+            "nameType": "Claims Counsel"
+        },
+        {
+            "nameTypeId": 35,
+            "nameTypeCode": "CV",
+            "nameType": "Coverage Counsel"
+        },
+        {
+            "nameTypeId": 36,
+            "nameTypeCode": "CR",
+            "nameType": "Court Reporter"
+        },
+        {
+            "nameTypeId": 37,
+            "nameTypeCode": "RM",
+            "nameType": "Risk Management"
+        },
+        {
+            "nameTypeId": 38,
+            "nameTypeCode": "HR",
+            "nameType": "HR Pilot Contact"
+        },
+        {
+            "nameTypeId": 39,
+            "nameTypeCode": "AC",
+            "nameType": "Accounting"
+        },
+        {
+            "nameTypeId": 40,
+            "nameTypeCode": "EN",
+            "nameType": "Engineer"
+        },
+        {
+            "nameTypeId": 41,
+            "nameTypeCode": "RT",
+            "nameType": "Retrocessionaire"
+        },
+        {
+            "nameTypeId": 42,
+            "nameTypeCode": "RD",
+            "nameType": "Reinsured"
+        },
+        {
+            "nameTypeId": 43,
+            "nameTypeCode": "OI",
+            "nameType": "Original Insured"
+        },
+        {
+            "nameTypeId": 44,
+            "nameTypeCode": "CO",
+            "nameType": "Chief Operating Officer"
+        },
+        {
+            "nameTypeId": 45,
+            "nameTypeCode": "CF",
+            "nameType": "Chief Financial Officer"
+        },
+        {
+            "nameTypeId": 46,
+            "nameTypeCode": "PO",
+            "nameType": "Principal Officer"
+        },
+        {
+            "nameTypeId": 47,
+            "nameTypeCode": "MM",
+            "nameType": "Marketing Manager"
+        },
+        {
+            "nameTypeId": 48,
+            "nameTypeCode": "AM",
+            "nameType": "Accounting Manager"
+        },
+        {
+            "nameTypeId": 49,
+            "nameTypeCode": "OM",
+            "nameType": "Office Manager"
+        },
+        {
+            "nameTypeId": 50,
+            "nameTypeCode": "CM",
+            "nameType": "Compliance Manager"
+        },
+        {
+            "nameTypeId": 51,
+            "nameTypeCode": "LM",
+            "nameType": "Licensing Manager"
+        },
+        {
+            "nameTypeId": 1052,
+            "nameTypeCode": "RF",
+            "nameType": "Credit Reference"
+        },
+        {
+            "nameTypeId": 1053,
+            "nameTypeCode": "AP",
+            "nameType": "Airport"
+        },
+        {
+            "nameTypeId": 1054,
+            "nameTypeCode": "FA",
+            "nameType": "Field Adjuster"
+        },
+        {
+            "nameTypeId": 1055,
+            "nameTypeCode": "PL",
+            "nameType": "Pilot"
+        },
+        {
+            "nameTypeId": 1056,
+            "nameTypeCode": "AO",
+            "nameType": "Aircraft Owner"
+        },
+        {
+            "nameTypeId": 1057,
+            "nameTypeCode": "PJ",
+            "nameType": "Project"
+        },
+        {
+            "nameTypeId": 1058,
+            "nameTypeCode": "IP",
+            "nameType": "Interested Party"
+        },
+        {
+            "nameTypeId": 1059,
+            "nameTypeCode": "LH",
+            "nameType": "Lienholder"
+        },
+        {
+            "nameTypeId": 1060,
+            "nameTypeCode": "LS",
+            "nameType": "Lessor"
+        },
+        {
+            "nameTypeId": 1061,
+            "nameTypeCode": "LL",
+            "nameType": "Landlord"
+        },
+        {
+            "nameTypeId": 1062,
+            "nameTypeCode": "FI",
+            "nameType": "Premium Finance"
+        },
+        {
+            "nameTypeId": 1063,
+            "nameTypeCode": "NI",
+            "nameType": "Named Insured"
+        },
+        {
+            "nameTypeId": 1064,
+            "nameTypeCode": "DT",
+            "nameType": "Designated Contractor"
+        },
+        {
+            "nameTypeId": 1065,
+            "nameTypeCode": "LO",
+            "nameType": "Location of Covered Ops"
+        },
+        {
+            "nameTypeId": 1066,
+            "nameTypeCode": "TS",
+            "nameType": "Tokio Marine Sister Company"
+        },
+        {
+            "nameTypeId": 1067,
+            "nameTypeCode": "PB",
+            "nameType": "Philadelphia Preferred Broker"
+        },
+        {
+            "nameTypeId": 1068,
+            "nameTypeCode": "IC",
+            "nameType": "Insured Primary Contact"
+        },
+        {
+            "nameTypeId": 1069,
+            "nameTypeCode": "FL",
+            "nameType": "Franchise Location"
+        },
+        {
+            "nameTypeId": 1071,
+            "nameTypeCode": "AX",
+            "nameType": "Assurex Member"
+        },
+        {
+            "nameTypeId": 1072,
+            "nameTypeCode": "VT",
+            "nameType": "Victim"
+        },
+        {
+            "nameTypeId": 1074,
+            "nameTypeCode": "VC",
+            "nameType": "ConversionProspect"
+        }
+    ],
+    "txnTypeResults": [
+        {
+            "txnTypeCode": "AL",
+            "txnType": "All Policy Transactions"
+        },
+        {
+            "txnTypeCode": "CN",
+            "txnType": "Cancellation"
+        },
+        {
+            "txnTypeCode": "CV",
+            "txnType": "In-force Policy Entry"
+        },
+        {
+            "txnTypeCode": "DE",
+            "txnType": "Declination"
+        },
+        {
+            "txnTypeCode": "EN",
+            "txnType": "Endorsement"
+        },
+        {
+            "txnTypeCode": "ER",
+            "txnType": "Extended Reporting"
+        },
+        {
+            "txnTypeCode": "NB",
+            "txnType": "New Business"
+        },
+        {
+            "txnTypeCode": "NR",
+            "txnType": "Non-Renewal"
+        },
+        {
+            "txnTypeCode": "RE",
+            "txnType": "Reinstatement"
+        },
+        {
+            "txnTypeCode": "RN",
+            "txnType": "Renewal"
+        },
+        {
+            "txnTypeCode": "RW",
+            "txnType": "Rewrite"
+        }
+    ],
+    "txnStatusResults": [
+        {
+            "txnStatusCode": "CN",
+            "policyTxnStatus": "Canceled Policy"
+        },
+        {
+            "txnStatusCode": "CT",
+            "policyTxnStatus": "Canceled Extended Reporting"
+        },
+        {
+            "txnStatusCode": "DA",
+            "policyTxnStatus": "Declined New Business"
+        },
+        {
+            "txnStatusCode": "DC",
+            "policyTxnStatus": "Declined Renewal"
+        },
+        {
+            "txnStatusCode": "DE",
+            "policyTxnStatus": "Declined Endorsement"
+        },
+        {
+            "txnStatusCode": "DR",
+            "policyTxnStatus": "Declined Rewrite"
+        },
+        {
+            "txnStatusCode": "DT",
+            "policyTxnStatus": "Declined Extended Reporting Endorsement"
+        },
+        {
+            "txnStatusCode": "EX",
+            "policyTxnStatus": "Expired Policy"
+        },
+        {
+            "txnStatusCode": "HS",
+            "policyTxnStatus": "Policy History"
+        },
+        {
+            "txnStatusCode": "IN",
+            "policyTxnStatus": "Inforce Policy"
+        },
+        {
+            "txnStatusCode": "IT",
+            "policyTxnStatus": "Inforce Extended Reporting Endorsement"
+        },
+        {
+            "txnStatusCode": "PA",
+            "policyTxnStatus": "Pending New Business"
+        },
+        {
+            "txnStatusCode": "PC",
+            "policyTxnStatus": "Pending Renewal"
+        },
+        {
+            "txnStatusCode": "PD",
+            "policyTxnStatus": "Pending Premium Audit"
+        },
+        {
+            "txnStatusCode": "PE",
+            "policyTxnStatus": "Pending Endorsement"
+        },
+        {
+            "txnStatusCode": "PR",
+            "policyTxnStatus": "Pending Rewrite"
+        },
+        {
+            "txnStatusCode": "PT",
+            "policyTxnStatus": "Pending Extended Reporting Endorsement"
+        },
+        {
+            "txnStatusCode": "PV",
+            "policyTxnStatus": "Pending In-force Policy Entry"
+        },
+        {
+            "txnStatusCode": "RE",
+            "policyTxnStatus": "Reinstatement"
+        },
+        {
+            "txnStatusCode": "V ",
+            "policyTxnStatus": "Voided Transaction"
+        }
+    ],
+    "processStatusResults": [
+        {
+            "processStatusCode": "*",
+            "processStatus": "In-force"
+        },
+        {
+            "processStatusCode": "A",
+            "processStatus": "Approved"
+        },
+        {
+            "processStatusCode": "C",
+            "processStatus": "Cancelled"
+        },
+        {
+            "processStatusCode": "I",
+            "processStatus": "Issued"
+        },
+        {
+            "processStatusCode": "P",
+            "processStatus": "Pending"
+        },
+        {
+            "processStatusCode": "Q",
+            "processStatus": "Quoted"
+        },
+        {
+            "processStatusCode": "R",
+            "processStatus": "Rescinded"
+        },
+        {
+            "processStatusCode": "V",
+            "processStatus": "Void"
+        }
+    ]
+    }
+}

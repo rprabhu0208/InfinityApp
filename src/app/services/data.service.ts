@@ -21,7 +21,8 @@ export class DataService
          return new Promise(
             (resolve,reject) =>
         {   
-            this.HTTPService.get(AppConfig.Services.baseUrl+"/metadata/api/metadata")
+            this.HTTPService.get(AppConfig.Services.metaDataUrl+"/metadata/api/metadata")
+            //this.HTTPService.get(AppConfig.Services.metaDataUrl + "/metadata")
             .subscribe(
                 (response) => {  
                 
@@ -59,13 +60,15 @@ export class DataService
             //     }
             // )
 
-            this.HTTPService.get(AppConfig.Services.baseUrl+"/infinity/api/policysearch",params)
+            // this.HTTPService.get(AppConfig.Services.baseUrl+"/infinity/api/policysearch",params)
+            this.HTTPService.get(AppConfig.Services.baseUrl+"/infinity/api/policysearch")
             .subscribe(
                 (response) => {  
-                    let policyResults = response.json();
+                    debugger;
+                    //let policyResults = response.json();
 
-                    // this.PolicySearchResults = response.json();
-                    this.PolicySearchResults = policyResults.policySearchResults;
+                     this.PolicySearchResults = response.json();
+                    //this.PolicySearchResults = policyResults.policySearchResults;
                     return resolve(this.PolicySearchResults); 
                 },
                 (error) => {

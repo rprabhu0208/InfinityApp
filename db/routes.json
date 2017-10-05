@@ -1,0 +1,5 @@
+{
+  "/api/*": "/$1", 
+  "/infinity/api/policysearch": "/policySearchResults",
+  "/metadata/api/metadata": "/metadata"
+}

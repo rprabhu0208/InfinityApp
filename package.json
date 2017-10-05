@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start":  "concurrently \"json-server -w db/policydata.json -p 5000 --routes db/routes.json\" \"json-server -w db/metadata.json -p 5001 --routes db/routes.json\" \"ng serve \"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
