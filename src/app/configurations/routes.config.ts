@@ -12,6 +12,10 @@ export const Routes = [
         path:'policysearch',
         component:PolicySearchComponent
     } ,
+       {
+        path:'policy', 
+        component:PolicyDetailComponent 
+    },
      {
         path:'policy/:policyTxnId', 
         component:PolicyDetailComponent 

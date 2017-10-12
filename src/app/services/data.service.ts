@@ -41,9 +41,10 @@ export class DataService
         return new Promise(
             (resolve,reject) =>
         {    
-            this.HTTPService.get(AppConfig.Services.baseUrl+"/infinity/api/policysearch",params)
+            this.HTTPService.get(AppConfig.Services.baseUrl+"/api/policysearch",params)
             .subscribe(
                 (response) => {  
+                   
                     let policyResults = response.json();
 
                     // this.PolicySearchResults = response.json();
@@ -51,7 +52,7 @@ export class DataService
                     return resolve(this.PolicySearchResults); 
                 },
                 (error) => {
-                    console.dir(error)
+                    
                     return reject("No data found");
                 }
             )

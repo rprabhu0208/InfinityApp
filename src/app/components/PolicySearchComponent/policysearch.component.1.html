@@ -1,0 +1,265 @@
+<div style="padding:2px 5px 2px 5px">
+    <button type="button" id="btnSearch" (click)="Search(PolicySearch)" ><span  class="fa fa-search" ></span></button>
+</div>
+<p-accordion [activeIndex]="AccordionIndex" (onOpen)="onTabOpen($event)">
+<p-accordionTab header="Search Criteria" >
+   <div class="container"> 
+      <div class=""><!--panel panel-default--> 
+         <div class=""><!--panel-body-->
+             <div class="col-1">
+                <fieldset  >
+                <legend> Common Search Criteria:</legend>
+               <table border="0" width="100%" class="table">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup> 
+                    <tr>
+                     <td>Policy #:</td>
+                     <td colspan="3"><input type="text"  [(ngModel)]="PolicySearch.policyNum" name="policyNum"  (keyup.enter)="Search(PolicySearch)">
+                     <input type="button" id="btnSearchFromImage" value="Search from Image" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Insured File As Name :</td>
+                     <td colspan="3">
+                        <input type="text" [(ngModel)]="PolicySearch.InsuredFileAsName" name="InsuredFileAsName" (keyup.enter)="Search(PolicySearch)" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <input type="checkbox"   name="Override" value="Override Sequencing">        Override Sequencing
+                        <input type="checkbox"   name="SoundsLike" value="Sounds like">Sounds
+                        like
+                        <input type="checkbox"   name="AllRelationships" value="All Relationships">All
+                        Relationships
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span>DBA Name:</span>
+                     </td>
+                     <td colspan="3">
+                        <input type="text" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        PolicyID :
+                     </td>
+                     <td>
+                        <input type="text" [(ngModel)]="PolicySearch.PolicyID"   style="width:90%">
+                     </td>
+                     <td><span>Version#:</span> </td>
+                     <td>
+                        <input type="text" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span>  PolicyYear: </span>
+                     </td>
+                     <td>
+                        <input type="text" style="width:90%">
+                     </td>
+                     <td colspan="3"> </td>
+                  </tr>
+               </table>
+            </fieldset>
+            <div class="clear"></div>
+            <fieldset >
+               <legend> Address Search Criteria</legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Address Type:</td>
+                     <td colspan="3">
+                        <input type="radio" name="gender" value="male"> Insured, Policy or Underwriting Name Address<br>
+                        <input type="radio" name="gender" value="female"> Risk Allocation Address<br>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Address :</td>
+                     <td colspan="3">
+                        <input type="text" style="width:100%"> <input type="checkbox" name=" Soundslike" value="Sounds like"> Sounds like<br />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td> City:</td>
+                     <td colspan="3">
+                        <input type="text" style="width:100%">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>State/Province :</td>
+                     <td colspan="3">
+                        <select style="width: 100%"  [(ngModel)]="PolicySearch.StateId"   >
+                         <option value="" >All</option>
+                           <option *ngFor="let state of states" [value]="state.stateId" > {{state.stateName}}</option> 
+                        </select>
+                        <br>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Zip/Postal Code:</td>
+                     <td>
+                        <input type="text" style="width:90%" >
+                     </td>
+                     <td class="right">Country/Region:</td>
+                     <td>
+                        <input type="text" class="right" style="width:100%" > 
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Country:</td>
+                     <td colspan="3">
+                         <select style="width:100%" [(ngModel)]="PolicySearch.CountryCode" >
+                               <option value="">All</option>
+                               <option *ngFor="let country of countries" [value]="country.countryCode" > {{country.countryName}}</option> 
+                         </select>
+                     </td> 
+                     </tr> 
+               </table>
+            </fieldset>
+            </div>
+            <!-- Right Panel -->
+            <div class="col-1">
+                <fieldset  >
+               <legend> Other Name Search Criteria:</legend>
+               <table border="0" width="100%" class="table">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Other Name Type:</td>
+                     <td colspan="3"> 
+                         <select style="width:100%" [(ngModel)]="PolicySearch.OtherNameTypeId">
+                               <option value="">All</option>
+                              <option *ngFor="let othername of otherNames" [value]="othername.nameTypeId" > {{othername.nameType}}</option>  
+                         </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Other File As Name :</td>
+                     <td colspan="3">
+                        <input type="text" (keyup)="onKey($event)" style="width:100%">
+                        <input type="checkbox" name=" Soundslike" value="Sounds like"> Sounds like<br />
+                     </td>
+                  </tr> 
+               </table>
+            </fieldset>
+            <div class="clear"></div>
+            <fieldset >
+               <legend>Sub Company Level Search Criteria</legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Sub-Company:</td>
+                     <td colspan="3">
+                        <select style="width:100%" [(ngModel)]="PolicySearch.SubCompanyCode"  > 
+                            <option value="" >All</option>
+                            <option *ngFor="let subcompany of subCompanies;"  [value]="subcompany.subCompanyCode" > {{subcompany.subCompanyName}}</option>  
+                         </select>
+                     </td>
+                  </tr>
+                    <tr>
+                     <td>Line of Business:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                           <option value="">All</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Policy Type:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                             <option value="">All</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Underwriting Asst:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                  <option value="">All</option>
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Underwriter:</td>
+                     <td colspan="3">
+                        <select style="width:100%">
+                            <option value="">All</option>
+                         </select>
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+            <div class="clear"></div>
+            <fieldset >
+               <legend>Policy Transaction Status Search Criteria </legend>
+               <table class="table" style="width:100%">
+                  <colgroup>
+                     <col width="40%">
+                     <col width="20%">
+                     <col width="20%">
+                     <col width="20%">
+                  </colgroup>
+                  <tr>
+                     <td>Transaction Type:</td>
+                     <td colspan="3">
+                        <select style="width:100%" [(ngModel)]="PolicySearch.TxnTypeCode" >
+                             <option value="" selected >All</option>
+                            <option *ngFor="let txnType of txnTypes" [value]="txnType.txnTypeCode" > {{txnType.txnType}}</option> 
+                         </select>
+                     </td>
+                  </tr>
+                    <tr>
+                     <td>Transaction Status:</td>
+                     <td colspan="3">
+                        <select style="width:100%" [(ngModel)]="PolicySearch.TxnStatusCode" >
+                              <option value="">All</option>
+                              <option *ngFor="let txnStatus of txnstatus" [value]="txnStatus.txnStatusCode" > {{txnStatus.policyTxnStatus}}</option> 
+                         </select>
+                     </td>
+                  </tr>
+                   <tr>
+                     <td>Processing Status:</td>
+                     <td colspan="3">
+                        <select style="width:100%"  [(ngModel)]="PolicySearch.ProcessStatusCode">
+                           <option value="">All</option>
+                              <option *ngFor="let pStatus of processStatus" [value]="pStatus.processStatusCode" > {{pStatus.processStatus}}</option> 
+                         </select>
+                     </td>
+                  </tr>
+                  
+               </table>
+            </fieldset>
+            </div>
+
+         </div>
+         <!--<button (click)="Search(PolicySearch)" type="button">Search</button>-->
+      </div>
+   </div>
+</p-accordionTab>
+<p-accordionTab header="Search Results">
+   <!--<policy-list [type]="'RecentlyViewed'" ></policy-list>  -->
+   <policy-list [Policies]="PolicySearchResults"></policy-list>
+</p-accordionTab>
+</p-accordion>

@@ -1,0 +1,82 @@
+<div class="content-section implementation" style="overflow-x:auto">
+    <table class="table table-hover table-bordered" [mfData]="_PolicySearchResults" #mf="mfDataTable" >
+        <thead class="thead-inverse">
+            <tr>
+                    <th ><mfDefaultSorter by="subCompanyName">Sub-Company</mfDefaultSorter></th>
+                    <th style="width:30%"> <mfDefaultSorter by="insuredFileAsName">Insured File As Name </mfDefaultSorter>
+                        <!--<filter by="InsuredName" filterMode="equals" options="InsuredNames" ></filter>-->
+                    </th>
+                    <th><mfDefaultSorter by="policyNum">Policy #</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="policyTxnNum">Version #</mfDefaultSorter></th>
+                    <th> <mfDefaultSorter by="policyType">Policy Type</mfDefaultSorter>  </th>
+                    <th><mfDefaultSorter by="countryCode">Country</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="stateCode">State/Province</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="city">City</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="txnTypeCode">Txn Type</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="enReason">en Reason</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="txnStatusCode">Status</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="writtenPrem">Written Premium</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="txnEff">Txn Effective</mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="policyExp">Expiration</mfDefaultSorter></th> 
+                    <th><mfDefaultSorter by="issued"> Issured </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="producer"> Producer </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="policyYear"> Policy Year </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="policyTermNum"> Term # </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="policyId"> Policy ID </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="lastTxnNum"> Last Version # </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="portalStatus"> PortalStatus </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="portalStatusDescription"> PortalStatusDescription </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="altPolicyNum"> AltPolicyNum </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="busClass"> BusClass </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="creationDate"> CreationDate </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="declinationTypeCode"> DeclinationTypeCode </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="isCancelled"> IsCancelled </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="isNonRenewable"> IsNonrenewable </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="policyEff"> PolicyEff </mfDefaultSorter></th>
+                    <th><mfDefaultSorter by="onWatchList"> OnWatchList </mfDefaultSorter></th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="white-space: nowrap" *ngFor="let item of mf.data" class="pointer"  (click)="showPolicyTransaction(item.policyTxnId)">
+                <td>{{item.subCompanyName}}</td>
+                <td>{{item.insuredFileAsName}}</td>
+                <td>{{item.policyNum}}</td> 
+                <td>{{item.policyTxnNum}}</td>
+                <td>{{item.policyType}}</td>
+                <td>{{item.countryCode}}</td>
+                <td>{{item.stateCode}}</td>
+                <td>{{item.city}}</td>
+                <td>{{item.txnTypeCode}}</td>
+                <td>{{item.enReason}}</td>
+                <td>{{item.txnStatusCode}}</td>
+                <td>{{item.writtenPrem | number:'1.2-2'}}</td>
+                <td>{{item.txnEff | date:'MM/dd/yyyy' }} </td>
+                <td>{{item.policyExp | date:'MM/dd/yyyy'}} </td>
+                <td>{{item.issued | date:'MM/dd/yyyy'}}</td>
+                <td>{{item.producer}}</td>
+                <td>{{item.policyYear}}</td> 
+                <td>{{item.policyTermNum}}</td>
+                <td>{{item.policyId}}</td>
+                <td>{{item.lastTxnNum}}</td>
+                <td>{{item.portalStatus}}</td>
+                <td>{{item.portalStatusDescription}} </td>
+                <td>{{item.altPolicyNum}}</td>
+                <td>{{item.busClass}}</td>
+                <td>{{item.creationDate | date:'MM/dd/yyyy'}}</td> 
+                <td>{{item.declinationTypeCode}}</td>
+                <td>{{item.isCancelled}}</td>
+                <td>{{item.isNonRenewable}}</td>
+                <td>{{item.policyEff | date:'MM/dd/yyyy'}}</td>
+                <td>{{item.onWatchList}} </td> 
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="30">
+                    <mfBootstrapPaginator ></mfBootstrapPaginator>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>

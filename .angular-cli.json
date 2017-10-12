@@ -18,13 +18,18 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
-        "styles.css"
-         ,"../node_modules/bootstrap/dist/css/bootstrap.css"
+      "styles": [ 
+       "../src/assets/bootstrap/css/bootstrap.min.css" 
+       ,"../src/assets/font-awesome/css/font-awesome.min.css" 
+       ,"styles.css"
       ],
       "scripts": [
-        "../src/assets/jquery-3.2.1.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"],
+        "../src/assets/jquery-3.2.1.js"
+        ,"../src/assets/popper/popper.js"
+        ,"../src/assets/bootstrap/js/bootstrap.js"
+        ,"../src/assets/datatables/js/jquery.dataTables.min.js"
+       ],
+
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

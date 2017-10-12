@@ -5,13 +5,14 @@ import {DataService} from '../../services/data.service'
 // import {PolicyService} from '../../services/policy.service'
 import {URLSearchParams,RequestOptions  } from '@angular/http';
 import { Utilities  } from '../../common/Utilities';
+declare var jquery:any;
+declare var $ :any;
 @Component({
     moduleId: module.id,
     selector: 'policy-search',
-    templateUrl: 'policysearch.component.html' ,
-     styleUrls: ['policysearch.component.css']
-})
-
+    templateUrl: 'policysearch.component.html' 
+      
+}) 
 export class PolicySearchComponent implements OnInit {
      PolicySearch : PolicySearch;
      PolicySearchResults : PolicySearchResult[];  
@@ -25,14 +26,15 @@ export class PolicySearchComponent implements OnInit {
      txnstatus : TxnStatus[]
      otherNames : NameType[]
      processStatus : ProcessStatus[]
-     constructor(public dataservice:DataService) { 
+     constructor(public dataservice:DataService ) { 
          this.PolicySearchResults = []; 
          this.DB = dataservice;   
         //  this.PolicySearch = new PolicySearch()
           this.subCompanies =  this.states = this.countries = this.txnTypes = this.txnstatus = this.otherNames= this.processStatus=  [];
+          
      }
-
-    ngOnInit() { 
+   
+    ngOnInit() {  
         this.AccordionIndex = 0; 
         this.PolicySearch = new PolicySearch()
         this.PolicySearch.InsuredNameOption = new Options();   

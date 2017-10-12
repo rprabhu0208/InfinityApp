@@ -16,8 +16,7 @@ import { HttpModule } from '@angular/http';
 import { Utilities } from '../common/Utilities';
 import { FilterComponent } from '../common/components/filtercomponent/filter.component'
 import { PolicyDetailComponent  } from '../components/PolicyDetailComponent/policydetail.component';
-import { APP_INITIALIZER } from '@angular/core';
-import { AppConfig }       from '../configurations/application.config';
+import { APP_INITIALIZER } from '@angular/core'; 
  
 @NgModule({
   declarations: [

@@ -12,6 +12,7 @@ import { PolicySearch,Options ,SubCompany,State, Country, TxnType,TxnStatus, Nam
     moduleId: module.id,
     selector: 'policy-detail',
     templateUrl: 'policydetail.component.html',
+   
     styleUrls: ['policydetail.component.css']
 })
 
@@ -34,6 +35,7 @@ export class PolicyDetailComponent implements OnInit {
     }
 
     ngOnInit() {
+        
           this.DB.GetMetaData().then(
         (metadata: any) => {  
             this.subCompanies = metadata.subCompanyResults;  
@@ -49,37 +51,20 @@ export class PolicyDetailComponent implements OnInit {
         });
 
         this.policy = new Policy()
-        let policyTxnId = this.route.params.subscribe(params => {
+        let policyTxnId = this.route.params.subscribe(params => { 
             this.policyTxnId = params['policyTxnId'];
         });
-        console.log(policyTxnId)
-
-
-        this.DB.GetPolicyTransaction(policyTxnId)
-        .then(
-        (policy: Policy) => {  
-            this.policy = policy;    
-        },
-        (errorMessage: string) => {
-            console.log(errorMessage);
-        });
-        // this.sub = this.route.params.subscribe(params => {
-        //     this.policyTxnId = params['policyTxnId'];
-        // });
-        // if (!Utilities.isNullOrEmpty(this.policyTxnId)) {
-        //     // In a real app: dispatch action to load the details here.
-        //     let paramsdata: URLSearchParams = new URLSearchParams();
-        //     paramsdata.set('PolicyNum', this.policyTxnId); 
-        //     // this.DB.GetPolicies(paramsdata)
-        //     //     .then(
-        //     //     (policiesData: Policy[])  =>  {
-        //     //      this.policy = (policiesData.length > 0) ?policiesData[0] : null;
-        //     //     },
-        //     //     (errorMessage:  string)  =>  {
-        //     //         console.log(errorMessage);
-        //     //     });
-        // }
-
+        if(!Utilities.isNullOrEmpty(this.policyTxnId)){
+            debugger;
+            this.DB.GetPolicyTransaction(policyTxnId)
+            .then(
+            (policy: Policy) => {  
+                this.policy = policy;    
+            },
+            (errorMessage: string) => {
+                console.log(errorMessage);
+            });
+        }  
     }
  
 

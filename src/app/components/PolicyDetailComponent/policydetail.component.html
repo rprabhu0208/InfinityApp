@@ -1,396 +1,445 @@
-  <div class="container"> 
-      <div class=""><!--panel panel-default--> 
-         <div class=""><!--panel-body-->
-             <div class="col-2" style="padding-left:15px;">
-                <fieldset style="min-height:380px" > 
-               <legend> Insured/Policy Owner and Agency:</legend>
-               <table border="0" width="100%" class="table">
-                  <colgroup>
-                     <col width="40%">
-                     <col width="20%">
-                     <col width="20%">
-                     <col width="20%">
-                  </colgroup> 
-                  <tr>
-                     <td><label >Insured File As Name :</label></td>
-                     <td colspan="3">
-                        <input type="text"  [(ngModel)]="policy.insuredFileAsName" name="InsuredFileAsName"  style="width:80%" >
-                     </td>
-                  </tr>
-                   <tr>
-                     <td><label ><input type="checkbox" name="Override" value="Like">  Sounds Like </label></td>
-                     <td colspan="3">
-                        <textarea rows="5" disabled style="resize: none;width:80%"></textarea>
-                     </td>
-                  </tr>
-                   <tr>
-                     <td ><label >Agency File As Name :</label></td>
-                     <td colspan="3">
-                        <input type="text"  name="InsuredFileAsName"  style="width:80%" >
-                     </td>
-                  </tr>
-                   <tr>
-                    <td><label ><input type="checkbox"   name="Override" value="Like">  Sounds Like</label> </td>
-                     <td colspan="3">
-                        <textarea rows="5" disabled style="resize: none;width:80%"></textarea> 
-                     </td>
-                  </tr> 
-               </table>
-            </fieldset>  
-            </div> 
-            <div class="col-4">
-            <fieldset   style="min-height:380px" >
-               <legend>Transaction Information:</legend>
-               <table border="0" width="100%" class="table">
-                  <colgroup>
-                     <col width="40%">
-                     <col width="60%"> 
-                  </colgroup>
-                  <tr>
-                     <td><label >Txn Type:</label></td>
-                     <td >  
-                         <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-                   <tr>
-                     <td><label >Version #:</label></td>
-                     <td >  
-                        <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-                   <tr>
-                     <td><label >Last Version #:</label></td>
-                     <td >  
-                         <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-                   <tr>
-                     <td><label >Renewal #:</label></td>
-                     <td >  
-                       <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-                   <tr>
-                     <td><label >Endorsement #:</label></td>
-                     <td >  
-                        <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-                     <tr>
-                     <td><label >Rewrite #:</label></td>
-                     <td >  
-                       <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-                   <tr>
-                     <td><label >Reinstatement #:</label></td>
-                     <td >  
-                       <input type="text" class="txtBox-sm" disabled >
-                     </td>
-                  </tr>
-               </table>
-            </fieldset> 
-         </div>
-         <div class="col-3"> 
-            <fieldset   style="min-height:380px">
-               <legend>Premiums, Taxes and Fees</legend>
-               <table class="table" style="width:100%">
-                  <colgroup>
-                     <col width="40%">
-                     <col width="60%"> 
-                  </colgroup>
-                   <tr>
-                     <td><label > Annual Full Term :</label></td>
-                     <td >  
-                         <input type="text"   disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Actual Full Term :</label></td>
-                     <td >  
-                         <input type="text"   disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Written Premium :</label></td>
-                     <td >  
-                         <input type="text"   disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Term Written Premium :</label></td>
-                     <td >  
-                         <input type="text"    disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Written Taxes and Fees :</label></td>
-                     <td >  
-                         <input type="text"  disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Total Txn Written :</label></td>
-                     <td >  
-                         <input type="text"  disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Commission Rate :</label></td>
-                     <td >  
-                         <input type="text"    disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Commission Amount :</label></td>
-                     <td >  
-                         <input type="text"  disabled >
-                     </td>
-                  </tr><tr>
-                     <td><label > Balance Due :</label></td>
-                     <td >  
-                         <input type="text"   disabled >
-                     </td>
-                  </tr>
-                  <tr>
-                     <td><label > Suspense Amt :</label> </td>
-                     <td >  
-                         <input type="text"   disabled >
-                     </td>
-                  </tr>
-               </table>
-            </fieldset> 
+
+ <div class="breadscrumb">
+    <span id="toggle-sidenav" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> </span>
+    <span class="page-title">Policy Administration / New Program </span>
+    </div>
+ <div class="summary-details">  
+<div class="row">
+<div class="col-md-2">
+<label>Insured</label>
+<div class="info">CARLOS HERNANDEZ</div>
+</div>
+<div class="col-md-2">
+<label>Agency</label>
+<div class="info">PORTAL TEST AGENCY</div>
+</div>
+<div class="col-md-2">
+<label>Sub Company</label>
+<div class="info">ARC</div>
+</div>
+<div class="col-md-2">
+<label>Policy # / Policy ID</label>
+<div class="info">777190-1 / 777190-1</div>
+</div>
+<div class="col-md-3">
+<label>Term</label>
+<div class="info">12/12/2016 - 12/12/2017</div>
+</div>
+
+</div>  
+</div>   
+
+
+<div class="container-fluid" style="margin-right: 0px;">    
+    <div class="card general-information">
+  <div class="card-header">
+      <a class="" data-toggle="collapse" href="#collapseSearchC" aria-expanded="true" aria-controls="collapseSearchC">
+    General Information<span class="pull-right"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+      </a>
+  </div>    
+<div class="collapse show" id="collapseSearchC">
+<div class="card-body">    
+<div class="">
+      <div class="row">
+      <div class="col-md-4">               
+      <div class="mr10m ml10m">
+        <fieldset>
+        <legend>Insured / Policy Owner and Agency</legend>          
+        <div class="card-body policy-owner">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Insured File As Name</label>
+                <div class="col-md-7">                
+                    <input type="text" class="form-control" placeholder="CARLOS HERNANDEZ">
+            <textarea>CARLOS HERNANDEZ 4108                    North 21 Street                                   MCALLEN TX 78504 USA
+            </textarea>
+                </div>
             </div>
-         <div class="clear"></div>
-         <div class="col-all" >
-            <fieldset >
-               <legend> Policy Information</legend>
-               <div class="col-3" >
-                  <table class="table" style="width:100%">
-                  <colgroup>
-                     <col width="40%">
-                     <col width="60%"> 
-                  </colgroup>
-                    <tr>
-                        <td><label  >Sub-Company :</label></td>
-                        <td >  
-                            <select style="width:90%"    [(ngModel)]="policy.SubCompanyCode"> 
-                            <option value="" >All</option>
-                            <option *ngFor="let subcompany of subCompanies;"  [value]="subcompany.subCompanyCode" > {{subcompany.subCompanyName}}</option>  
-                         </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label >Policy # :</label></td>
-                        <td >  
-                            <input type="text"  style="width:90%"  disabled >
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label  >Policy Type :</label></td>
-                        <td >  
-                          <select style="width:90%">
-                             <option value="">All</option>
-                         </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label >Term Type :</label></td>
-                        <td >  
-                           <select style="width:90%">
-                             <option value="">All</option>
-                         </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label  >Underwriting Asst :</label></td>
-                        <td >  
-                           <select style="width:90%">
-                             <option value="">All</option>
-                         </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label  >Underwriter :</label></td>
-                        <td >  
-                            <select style="width:90%">
-                             <option value="">All</option>
-                         </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label  >Renewal Option :</label></td>
-                        <td >  
-                            <select style="width:90%">
-                                <option value="">All</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label  >Declination Category :</label></td>
-                        <td >  
-                             <select style="width:90%">
-                                <option value="">All</option>
-                              </select>
-                        </td>
-                    </tr>
-                   </table>
-               </div>
-               <div class="col-3">
-                   <table class="table" style="width:100%; ">
-                  <colgroup>
-                     <col width="25%">
-                     <col width="25%"> 
-                     <col width="25%"> 
-                     <col width="25%"> 
-                  </colgroup>
-                    <tr>
-                        <td ><label  >Policy Year :</label></td>
-                        <td >  
-                            <input  type="text" class="txtBox-lr" disabled >
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="checkbox" value=""  >  Watch List
-                        </td>
-                    </tr>
-                    <tr>
-                        <td ><label  >Country :</label></td>
-                        <td >  
-                           <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td>
-                        <td><label  > State/Province: </label></td>
-                        <td>
-                               <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td ><label  >Effective :</label></td>
-                        <td >  
-                            <input type="text"  class="txtBox-lr" disabled >
-                        </td>
-                        <td><label  >Expiration: </label></td>
-                        <td>   <input type="text"  class="txtBox-lr" disabled >
-                        </td>
-                    </tr>
-                    <tr>
-                        <td ><label  >Currency :</label></td>
-                        <td colspan="3">   
-                              <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td> 
-                    </tr>
-                    <tr>
-                        <td ><label  >SL Licence # :</label></td>
-                        <td colspan="3">  
-                               <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td> 
-                    </tr>
-                    <tr>
-                        <td ><label  >Payment Plan :</label></td>
-                        <td colspan="3">   
-                               <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td> 
-                    </tr>
-                     <tr>
-                        <td ><label  >Billed To :</label></td>
-                        <td colspan="3">   
-                               <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td> 
-                    </tr>
-                    <tr>
-                        <td><label  >Agent Contract :</label></td>
-                        <td  colspan="3">  
-                            <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td  colspan="3" >  
-                           <input type="checkbox"  > Facultative Reinsurance
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label  >Decl. Type:</label></td>
-                        <td  colspan="3">  
-                            <select style="width:100%">
-                                <option value="">All</option>
-                              </select>
-                        </td>
-                    </tr>
-                   </table>
-               </div> 
-                <div class="col-3">
-                   <table class="table" style="width:100%">
-                  <colgroup>
-                     <col width="40%">
-                     <col width="60%">  
-                  </colgroup>
-                    <tr>
-                        <td ><label  >Original Inception :</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td> 
-                    </tr>
-                    <tr>
-                        <td ><label  >Equity Date :</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td> 
-                    </tr>
-                    <tr>
-                        <td ><label  >Rate Date :</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td>
-                     
-                    </tr>
-                    <tr>
-                        <td ><label  >Billing Method :</label></td>
-                        <td  >  
-                            <input type="text" disabled >
-                        </td> 
-                    </tr> 
-                    <tr>
-                        <td ><label  >Entered Date :</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td> 
-                    </tr> 
-                     <tr>
-                        <td ><label  >Received Date :</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td> 
-                    </tr> 
-                     <tr>
-                        <td ><label  >Issued Date :</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td> 
-                    </tr> 
-                    <tr>
-                        <td><label  >Previous Policy #:</label></td>
-                        <td >  
-                            <input type="text" disabled >
-                        </td>
-                    </tr>
-                   </table>
-               </div> 
-            </fieldset>
-            </div> 
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Agency File As Name</label>
+                <div class="col-md-7">                
+                    <input type="text" class="form-control" placeholder="PORTAL TEST AGENCY">
+            <textarea>PORTAL TEST AGENCY
+            </textarea>
+                </div>
+            </div>
+        </div>  
+        </fieldset>
       </div>
-   </div>
+      </div>
+          
+      <div class="col-md-3">               
+      <div class="mr10m ml10m">
+        <fieldset>
+        <legend>Transaction Information</legend>          
+            <div class="card-body transact-info">
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Txn Type</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="NB" disabled>
+                </div>
+            </div>    
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Version #</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>    
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Last Version</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>    
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Renewal #</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>    
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Endorsement #</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>    
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Rewrite #</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>   
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Reinstatement #</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>   
+            </div>  
+        </fieldset>
+      </div>
+      </div>
+      
+      <div class="col-md-5">               
+      <div class="mr10m ml10m">
+          <fieldset>
+                <legend>Premiums, Taxes and Fees</legend>          
+        <div class="card-body PTF">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Annual Full Term</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Actual Full Term</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Written Premium</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Term Written Premium</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Written Taxes and Fees</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0.00" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Total Txn Written</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0.00" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Commission Rate</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Commission Amount</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Balance Due</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0.00" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Suspense Amt</label>
+                <div class="col-md-4">                
+                    <input type="text" class="form-control" placeholder="0.00" disabled>
+                </div>
+            </div>
+        </div> 
+              </fieldset>
+      </div>
+      </div>
+          
+      <div class="col-md-12">               
+      <div class="mr10m ml10m">
+          <fieldset>
+                <legend>Policy Information</legend>
+          
+        <div class="card-body policy-info">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Sub Company</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>Artisan Contractors</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Policy #</label>
+                <div class="col-md-7">                
+                    <input type="text" class="form-control" placeholder="777190-1" disabled>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Policy Type</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>Artisan Contractors</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Term Type</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>12 Months</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Underwriting Asst</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>(Not Assigned)</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Underwriter</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>Howard, Terri</option>
+            </select>
+                </div>
+            </div>
+                <div class="extra-space"></div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Renewal Option</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>Auto RN Creation</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-6 col-form-label" for="formGroupExampleInput">Declination Category</label>
+                <div class="col-md-6">                
+                    <select class="form-control form-control-sm decline-cat">
+              <option>Lost Business</option>
+            </select>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-5">                
+            <div class="form-group">
+                <div class="row">
+                    <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Sub Company</label>
+                    <div class="col-md-3">                
+                        <input type="text" class="form-control" placeholder="">
+                    </div>  
+                    <label class="col-sm-3 col-form-label" for="formGroupExampleInput"></label>
+                    <div class="col-md-3">                
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Watch List
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Country</label>
+                    <div class="col-md-3">                
+                        <select class="form-control form-control-sm">
+                            <option>USA</option>
+                        </select>
+                    </div>  
+                    <label class="col-sm-3 col-form-label" for="formGroupExampleInput">State/Province</label>
+                    <div class="col-md-3">                
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Effective</label>
+                    <div class="col-md-3">                
+                        <select class="form-control form-control-sm">
+                            <option>11/06/2014</option>
+                        </select>
+                    </div>  
+                    <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Expiration</label>
+                    <div class="col-md-3">                
+                        <select class="form-control form-control-sm">
+                            <option>11/06/2015</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Currency</label>
+                <div class="col-md-9">                
+                    <select class="form-control form-control-sm">
+              <option>United States Dollars</option>
+            </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput">SL License #</label>
+                <div class="col-md-9">                
+                    <select class="form-control form-control-sm">
+              <option>(None)</option>
+            </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Payment Plan</label>
+                <div class="col-md-9">                
+                    <select class="form-control form-control-sm">
+              <option>Agency Bill - Single Invoice</option>
+            </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Billed To</label>
+                <div class="col-md-9">                
+                    <select class="form-control form-control-sm">
+              <option>HUNTER INSURANCE SERVICES, INC.</option>
+            </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Agent Contact</label>
+                <div class="col-md-9">                
+                    <select class="form-control form-control-sm">
+              <option>TELFORD, SEAN</option>
+            </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput"></label>
+                <div class="col-md-9">                
+                <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Faculative Reinsurance
+                        </label>
+                </div>
+                </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="formGroupExampleInput">Decl. Type</label>
+                <div class="col-md-9">                
+                <select class="form-control form-control-sm">
+                <option>No Response</option>
+                </select>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Original Inception</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+                <option>12/12/2016</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Equity Date</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>12/12/2016</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Rate Date</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>12/12/2016</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Billing Method</label>
+                <div class="col-md-7">                
+                    <input type="text" class="form-control" placeholder="Direct" disabled>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Entered Date</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>03/31/2014</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Received Date</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+              <option>03/31/2014</option>
+            </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Issued Date</label>
+                <div class="col-md-7">                
+                    <select class="form-control form-control-sm">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                <label class="col-sm-5 col-form-label" for="formGroupExampleInput">Previous Policy #</label>
+                <div class="col-md-7">                
+                    <input type="text" class="form-control" placeholder="U13AC784584" disabled>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+        
+        </div>
+        </div>
+              </fieldset>
+        </div>  
+      </div>
+      </div>      
+          
+      </div>
+    </div>
+    
+    <div class="card-footer">
+      <button class="btn btn-primary pull-right"> Save</button>    
+      <button class="btn btn-default btn-next pull-right">Clear</button>
+      
+  </div>
+  </div>
+  
+</div>
+</div>
